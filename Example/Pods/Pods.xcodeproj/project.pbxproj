@@ -1,0 +1,3289 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03DCAF19199BEC7662494FF4FEB468C3 /* AHKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D970049574DF0689EDCDBACE686D6821 /* AHKeychain.swift */; };
+		04239B3012CF53C30A7267441735B2AF /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B972EFE6E3CC7911FCC4CE26D0B13A /* AFError.swift */; };
+		064FC6BE63716F6CDE7DC667A92D8E51 /* AHFMServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4377DA9D227490D020D08FE873CE79EF /* AHFMServices.framework */; };
+		07F612198032CD3AF00198F98B33BE91 /* AHDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B196071C7B7CE5D97F09D915F94093C3 /* AHDatabase.swift */; };
+		07FB6BA1EFD380AD847803DF13A952A0 /* AHFMAudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDE0F245C54652BD03163F7107B5E01 /* AHFMAudioPlayerManager.swift */; };
+		098B2096AAC6FA639B883DBC36551DDB /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F9D3A18D21A02E50CD2A4C867B1A0B /* ResponseSerialization.swift */; };
+		0CABCA0975796E5011BEBCF0A78F81B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4673DFDEDD5E2B12B1FCD0FBE16D2EF0 /* Foundation.framework */; };
+		0D307173036F5A0D5C45A4D77399CBA6 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5551478DC97BB811E67D7967BFB1BB0E /* SwiftyJSON.framework */; };
+		0E2654844FF5C11A201626556904DC0C /* UIDeviceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7EE4AFEC0BA75EBCA27E32CF153C398 /* UIDeviceExtension.framework */; };
+		0E323FAA8AA1E20021F50B98E228C8BB /* AHFMEpisodeTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06D35E96C125CA593B9A863785DA2D9 /* AHFMEpisodeTransform.swift */; };
+		10DDD43E1258D46CF57CF0967B7A4A9C /* AHFMAudioPlayerVCManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 902483E0E0B5EF47C65DD3828331C2D3 /* AHFMAudioPlayerVCManager-dummy.m */; };
+		111C28295331939AEBD0B2CACBD65A3E /* AHFMServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4377DA9D227490D020D08FE873CE79EF /* AHFMServices.framework */; };
+		18642004F27FF88F231EAC95032DE33D /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C821F5BAF2E7DFFD9AFF3ED4E475C630 /* SwiftyJSON.swift */; };
+		1CCEB9C4888138BD1E8293CCCFEEEAA2 /* AHServiceRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72CA2523F8AA9538FFF0101027516A0E /* AHServiceRouter.framework */; };
+		209C1E4B757C3E67997D00F4385A4FE9 /* AHFMModuleManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F22C68D223D0CC59FD740E1612E9992 /* AHFMModuleManager-dummy.m */; };
+		25BAE52D0308110CC7EE99B88C0FD6A4 /* OAuth2Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10255F2A22CB04CD3C49848C74C14832 /* OAuth2Handler.swift */; };
+		26B9CBB439D2D20011385473BB47FC17 /* AHFMDataCenter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0742D841AA555434F4DD4B812B5006E /* AHFMDataCenter-dummy.m */; };
+		271D4320AF35D16FD15075A2F3FE4EE5 /* AHFMNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B4BB33039AB60ED4DE970DB0C8C1A6D /* AHFMNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27BE82FD1978913496865425946D85EE /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462DBBF62DC50E22C41A3B4410F003A0 /* ParameterEncoding.swift */; };
+		28C352D69E5A0710099A6BE809159702 /* AHDataModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D247790742B033FF8873A49040609D39 /* AHDataModel.framework */; };
+		29C61C27ABEC66F7C1E19E0C0433584E /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B9A35554DCE37D22D7C356AD976BB6 /* UIDevice+Extension.swift */; };
+		2CB4F05F73F8615AE98138DE74C19763 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6CD2D4AC3DA364D01B0B8C731BD175 /* TaskDelegate.swift */; };
+		2CFFF4A402A47E729F6CF639235FB611 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C2492ADB2F724B60B7FBBB06E384B /* Timeline.swift */; };
+		31C942E2ACFD80D63AEB99EF45C3DA50 /* AHDataModelQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB87E2EAB0E1E171C7551F8778008022 /* AHDataModelQuery.swift */; };
+		33D10529AF3D8E6C86A5AE5AF9E2DCCA /* AHFMModuleManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F06E3B79870B2B86436AD21F8A926CC /* AHFMModuleManager.framework */; };
+		351139B00D39DE0C48D2A6289CEE7163 /* AHFMAudioPlayerVCServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F12B22685EA8D2E1753922AEC8051B5 /* AHFMAudioPlayerVCServices.swift */; };
+		3668E6DC216E802D54AABD35C6BE3DB8 /* AHFMDataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35800FEC79B1C0D91DA2E016898057B /* AHFMDataCenter.swift */; };
+		38DA9C85542F215ABAEF1E94D21D5224 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9504DD247F39D89593F9883CC65344F3 /* Result.swift */; };
+		39C1CC180985B4B35D3CA160CD317548 /* AHFMModuleManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56E9750F9A4A0F97A07FA9E5A603FC1E /* AHFMModuleManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B8FE3907BD94F7F39A4C541D71934DA /* AHFMAudioPlayerVCServices-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 940F1F85F58E3561BE1520189EB62605 /* AHFMAudioPlayerVCServices-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43AA9C6F2C90611FABC79B5D7E03353B /* AHFMDataTransformers-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0E8716C47FEBB30B55C538B33054CD /* AHFMDataTransformers-dummy.m */; };
+		44A22D271AD37088556B5285ED52A89B /* Migration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC74925D0B198E41419EB6AB4606AC62 /* Migration.swift */; };
+		44F1AC857FA6DC9A64ED08D7047CF061 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4673DFDEDD5E2B12B1FCD0FBE16D2EF0 /* Foundation.framework */; };
+		45DB82BDE3167C6D7EDF6939B03C0DC9 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5551478DC97BB811E67D7967BFB1BB0E /* SwiftyJSON.framework */; };
+		48317F1DD022EFA13835DE5B43309203 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4673DFDEDD5E2B12B1FCD0FBE16D2EF0 /* Foundation.framework */; };
+		4C31DBB2F301129C2BAA884FBC2D1FA3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4673DFDEDD5E2B12B1FCD0FBE16D2EF0 /* Foundation.framework */; };
+		4E3E0BCFDF987157CA15544A5279749B /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A7BBC6A0237B917704F9D56A9E37F8 /* DispatchQueue+Alamofire.swift */; };
+		4E9154EE89752A163F835239910D9039 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 717A3714665E55B45BB6F992204260FE /* Alamofire.framework */; };
+		4F38A0AD30000B14F5F32DAADF18A727 /* AHFMSubscribedShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B241992DA81A58BE07A106600F8D1B /* AHFMSubscribedShow.swift */; };
+		4F6163442752EEAE4BA97E8EFAA85308 /* AHServiceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F2EC8D464D54FE4ED3B58467FEDFFA /* AHServiceRouter.swift */; };
+		51B26F42C29C4C65BEB3F32D16F4CAE4 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34804CDB08CFC2E615EC88CE1256644 /* Response.swift */; };
+		52085FF9F28EBD563637FEAD528B70AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4673DFDEDD5E2B12B1FCD0FBE16D2EF0 /* Foundation.framework */; };
+		57A558693F58B9C0D092E8093EB67877 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0DD81BD90B05EFEECCE79D2048940E /* ServerTrustPolicy.swift */; };
+		59931E757DEE20CF56773E23A5882495 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D875FE528B112C7AFADBFB0B397B9 /* MultipartFormData.swift */; };
+		59D67D8A1E75FA4C4EB3F29A10B9EC48 /* UIDeviceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7EE4AFEC0BA75EBCA27E32CF153C398 /* UIDeviceExtension.framework */; };
+		5D13EA885C471530E78222D4B7C50027 /* UIDeviceExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7084D49E7A9084C5534018FBD1FA05A /* UIDeviceExtension-dummy.m */; };
+		5E49ADDDB2FFC8AA45EB729085E46587 /* KeychainAccess-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 99FD3E1D6CA04F41630AACAC11DDF6C4 /* KeychainAccess-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F465701DFD340AE895ADEF2B0A93BDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4673DFDEDD5E2B12B1FCD0FBE16D2EF0 /* Foundation.framework */; };
+		62EB447CD35174F326FB00E3A90732F5 /* AHDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D1599A77EA6EB10DEFCCBA57EDA96E /* AHDB.swift */; };
+		64693D6E6FDD398771762DAC0AFEF6C0 /* AHFMShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F93F1909E0741FBDEED8B710EA9C9F /* AHFMShow.swift */; };
+		649B4BBF8F0EC5CE279F408C9494DC5D /* AHFMEpisodeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BE179720555631043E45268138ACF2 /* AHFMEpisodeInfo.swift */; };
+		64D0D857F61599D427F4789530AE41E9 /* AHFMNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 086297BFC6FBB9E144822700E1D7B61C /* AHFMNetworking-dummy.m */; };
+		671E6FB538A13B18100CE9A7D2AD8A19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4673DFDEDD5E2B12B1FCD0FBE16D2EF0 /* Foundation.framework */; };
+		6E6F721AF7F3EE96CEEAAD5D52659C16 /* AHFMEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70565726B4C9ED60828B499E52935FB /* AHFMEpisode.swift */; };
+		73255EB48E14FAEB95AC1A9E9FEF334F /* AHFMDataTransformers-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E5E725BAFEAAFA94A9599BE89D35DD1 /* AHFMDataTransformers-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77171DEB87C0EBC29773B293587A0104 /* AHServiceRouter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C8383129B5F575F8161D2C7400070F /* AHServiceRouter-dummy.m */; };
+		792419F4CAD03C23F9BBA18145A707E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4673DFDEDD5E2B12B1FCD0FBE16D2EF0 /* Foundation.framework */; };
+		79A2D9A6435F394FC407B709739A1AB0 /* AHFMAudioPlayerVCServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14ABD65C409D19F1BA091F9F2461AE4F /* AHFMAudioPlayerVCServices.framework */; };
+		7B764FB2C4601D7D9C0B955620B888B0 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F6C86AC5C38711C4AD86C85F6B25AB /* SwiftyJSON-dummy.m */; };
+		816B89B457C4E75B04210A37DA4F3AE6 /* module.modulemap in Sources */ = {isa = PBXBuildFile; fileRef = 6B9E35623AC1E5E433925DAA054F1884 /* module.modulemap */; };
+		8A7E7F1C57A50A28A6BDBF427071816C /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE71540C9F4D93F31AB171EB03C7E6D8 /* KeychainAccess.framework */; };
+		8B387AE80B7CE5528B5EA8530B7E9173 /* AHDataModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BA3275EA5755ACF795FB6E7A525518 /* AHDataModel-dummy.m */; };
+		8E9F37465E6996423D95194CF0B30B78 /* AHFMDataTransformers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 858FE4B24BCD645EBF0FF56CA416BC91 /* AHFMDataTransformers.framework */; };
+		903EFCA68B1500F2472DD967E8683E62 /* AHDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8D962C7536423715635353B1575066 /* AHDataModel.swift */; };
+		904CA443D7C708E55ACC1140F48D2950 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88715EA31689CB0D5E1C1D4F7C54F4C7 /* SessionManager.swift */; };
+		91C88120981E7A2988B112C828896F02 /* AHFMEpisodeHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2468804EFD27BB649BCF5E0ED2FBBA4 /* AHFMEpisodeHistory.swift */; };
+		9352C250D3B0304222B405253F6D8C44 /* AHFMDataCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30065464EE689CFA4C3FF785FF395785 /* AHFMDataCenter.framework */; };
+		95222828A214551D3A14E8233217D6AA /* Pods-AHFMAudioPlayerVCManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 694BB110FB73F478534C2AF7F298878A /* Pods-AHFMAudioPlayerVCManager_Example-dummy.m */; };
+		9C13E582541B5E219EA55B8239A8C7AD /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DB8C563B118F43C9AB2EC58BADF5787 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C2FD163B0EC48A90710D16D622A0718 /* AHFMServices-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA42E9F61A83A652A348A3215A0B3E3 /* AHFMServices-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CF2FFAEE798B5757C18E997331D44B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4673DFDEDD5E2B12B1FCD0FBE16D2EF0 /* Foundation.framework */; };
+		A7873527F0F3D3EC67F5C07167ECB664 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C744D937EDFC21540250C97D5E84DD /* Keychain.swift */; };
+		A92E76DB0408496D6E8B6D9B2A58E1FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4673DFDEDD5E2B12B1FCD0FBE16D2EF0 /* Foundation.framework */; };
+		A9999F17A41ADF1CC5BFEE4947F9DA7D /* AHDataModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D247790742B033FF8873A49040609D39 /* AHDataModel.framework */; };
+		AA3749C8223D4F109A1B1EE015E5A9C5 /* AHFMModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9768CF69BB4FEE07D530597931EAEEC2 /* AHFMModuleManager.swift */; };
+		AA6C7468D3D8E0D118C69F191CF22B48 /* AHFMNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABFE1D3B9D6FA140C006ADF5D94C323 /* AHFMNetworking.swift */; };
+		AF7C6504DFCF66CB9B983D46DDE6B3E5 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840DCF86B157698542521D50D54EF446 /* SessionDelegate.swift */; };
+		B1339B97877D363A3DE27D00F49C9BA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4673DFDEDD5E2B12B1FCD0FBE16D2EF0 /* Foundation.framework */; };
+		B1C0A0DF492C806A671F30DED35FD34F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 717A3714665E55B45BB6F992204260FE /* Alamofire.framework */; };
+		B24F2C009E377382EA7D673F8E21AD23 /* Pods-AHFMAudioPlayerVCManager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D1555D0A818F1C21CF9DD603E3537BA6 /* Pods-AHFMAudioPlayerVCManager_Tests-dummy.m */; };
+		B26F4B89B7837D6EE5AD2DD63DD7540E /* AHNetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC267F73ACEA09B7ADAA0640268D8A5 /* AHNetworkConstants.swift */; };
+		B435162D2C5788FE4240A342DCF75693 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 09AC079B1F4193744EFDD07FFDB83855 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B72FB9092EEA7FAD4F0522A4BCE067BA /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622399FA8125D14EE1BFF9AB0FB90C62 /* Validation.swift */; };
+		BB401CFB22A0B487055178C4181B650A /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FF5E2FF4E092095FF3BA5F04C311D3 /* Alamofire.swift */; };
+		BBCC4C69E7449F5B16071C38718ABED4 /* KeychainAccess-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BA37B5654414ABE671FA8FF3D75FA9 /* KeychainAccess-dummy.m */; };
+		BDE4594A6CD955ED1B4F27B25E088599 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4673DFDEDD5E2B12B1FCD0FBE16D2EF0 /* Foundation.framework */; };
+		BE9480EAC2A571F4022982FEACE96FAD /* AHServiceRouter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42265492CF4CD7E71A80CEC732BAD401 /* AHServiceRouter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE3E8B4E6AF5B3FF7CB52B408674436 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 75770AF5FB1296BE1D98A166AA13A3FC /* Alamofire-dummy.m */; };
+		C5D0047506CFD843471F1E399F3AD6D4 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE71540C9F4D93F31AB171EB03C7E6D8 /* KeychainAccess.framework */; };
+		C6F4884CD185FEEFD03A64F00E4ACC86 /* AHFMNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEC748E0336D67BD815BB91596FD27E /* AHFMNetworking.framework */; };
+		CA7CB41D0C9F4942DCBF9C2344D155A8 /* AHFMShowTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670156A8B2BB61A52EE09AC20BE7425C /* AHFMShowTransform.swift */; };
+		CD3C1E69BEDB9C08B2596DE536F0B335 /* Migrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F1B4B2C39328D8D708673419AE5D06 /* Migrator.swift */; };
+		CE2656D3D1583100FB5857D997A64EF4 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B7D3EB615B29353AA92429FDF36594 /* Request.swift */; };
+		CFC0839DB72E65F3C6121D106C886C67 /* AHFMServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64834F4EEFBD438B891CE5BE23956D /* AHFMServices.swift */; };
+		D43D237D13AE436FAF2EF8F2C21F4CF5 /* AHFMManagerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821869D2F9B964D4EC148B03B25377E8 /* AHFMManagerHandler.swift */; };
+		D56183FB73DDB174D4C563BEB38CFE56 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D272B319F08BFFAB5B3A6B5FC19BE3 /* NetworkReachabilityManager.swift */; };
+		D6D7C7C19366E1763F31CCB5A0ED4925 /* module.modulemap in Sources */ = {isa = PBXBuildFile; fileRef = 94605675739D30D7F5B4F0933AF6A589 /* module.modulemap */; };
+		D7A7A5D2C62FA25EBC8B8A8BBB2A3483 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4673DFDEDD5E2B12B1FCD0FBE16D2EF0 /* Foundation.framework */; };
+		DE3C4EDDBE87E905CAEB2345A3F91547 /* AHFMAudioPlayerVCServices-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 918C329CBC38D9537E6C806A6C938581 /* AHFMAudioPlayerVCServices-dummy.m */; };
+		DECAE50CD9AA2060ADDFA5FC06612C29 /* AHFMServices-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0E2E7933983F4464B14B41E0E641 /* AHFMServices-dummy.m */; };
+		E19E32623034EF0222187B37A7BDFD11 /* UIDeviceExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C7804118000EE018AC69C859121A215 /* UIDeviceExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8856DCBBD8410624FFED283B38F64FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4673DFDEDD5E2B12B1FCD0FBE16D2EF0 /* Foundation.framework */; };
+		E8C444D4A46F753671BCB772BC47E626 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4673DFDEDD5E2B12B1FCD0FBE16D2EF0 /* Foundation.framework */; };
+		F48E71735BD86B0E5FCA3116332F74AC /* AHFMDataCenter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D035EF31B4534599CB2ADB29FD1D48C2 /* AHFMDataCenter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4B943EE76BB0618ECA363090A936158 /* Pods-AHFMAudioPlayerVCManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A57CDDA629B4D8749F7AA37B90286700 /* Pods-AHFMAudioPlayerVCManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8E3EF67AA5B7CE182C6892E35A64209 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12F1623407EEE35B97708E43D187826 /* Notifications.swift */; };
+		F8FC390A674D827CBCDCFC00895B26A0 /* AHFMAudioPlayerVCManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 709C8B820DB37D46A6AC98572AB4D3A9 /* AHFMAudioPlayerVCManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9733CB4932C2DEBDBB574480D2A788F /* AHDataModel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8048D9D99CE8E06FF9605DF65FA616DF /* AHDataModel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F999B7016FF641BCBEAAC2CC1DFF1592 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5551478DC97BB811E67D7967BFB1BB0E /* SwiftyJSON.framework */; };
+		FBEB93C14BEB82C970FCCA3D63F295A4 /* AHDBColumnInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7F685F3FADFE52B47C0F28D88C1C7E /* AHDBColumnInfo.swift */; };
+		FD7C4F7285DEFE8478F38632B1BEAC07 /* Pods-AHFMAudioPlayerVCManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D869B65D91B30D5BE03518AB0BE91D /* Pods-AHFMAudioPlayerVCManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A7FB3A54C3A195739920C50FF0A35FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03FA013A9BAB805CB7452F9FAB189230;
+			remoteInfo = AHServiceRouter;
+		};
+		213C009EC1E4E83CA018235D4D1AFB13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1F6066DAC0E9293305836FE01990C48;
+			remoteInfo = AHDataModel;
+		};
+		2704D3E27EA4505DEECE114E45AF80B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC6668F6A51A6E23A4FBA9DB71DCE709;
+			remoteInfo = AHFMServices;
+		};
+		2708B31AF8541931358C6CCF665E7973 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6447BA5C324920365AD12084BE3B94C0;
+			remoteInfo = Alamofire;
+		};
+		2824ABACB990CD4FF44D1DEDBC6EF5C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37F13E7194F463F9D017551F95E73FF2;
+			remoteInfo = AHFMNetworking;
+		};
+		31782C8218ADD28CADE6CFE3502FE785 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6447BA5C324920365AD12084BE3B94C0;
+			remoteInfo = Alamofire;
+		};
+		333987376F35BC165F1A738AF7DD8CF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D0744FA0F99F2CB757431FBC2DF1170;
+			remoteInfo = AHFMModuleManager;
+		};
+		360DDB592E873C348F32F07CA75CC69B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20E51B0066364433EDE56F0C749FA05C;
+			remoteInfo = AHFMAudioPlayerVCServices;
+		};
+		3A3F5A2FF0A24E83EDA1EA53B02F9F96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 001307F593B684F88A2AA0964E7B41C9;
+			remoteInfo = UIDeviceExtension;
+		};
+		3BB1B9655C0F85F22DD8387CA817F38F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20E51B0066364433EDE56F0C749FA05C;
+			remoteInfo = AHFMAudioPlayerVCServices;
+		};
+		3DF4C3F7476C102B329C3C8DEEA1E8D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03FA013A9BAB805CB7452F9FAB189230;
+			remoteInfo = AHServiceRouter;
+		};
+		4A5068E8B7F57DF2C9C6FFD50F885327 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87748AA572C7B415943A215892E52BA1;
+			remoteInfo = AHFMDataTransformers;
+		};
+		596B4979344A634DB42DF36DDC545DBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F052D4129FF1BA68F76837862CB12FEA;
+			remoteInfo = SwiftyJSON;
+		};
+		5AB12A76A22B8B4E2F5223FEED405968 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC0C0580F94A4CBE8A20D7612732C564;
+			remoteInfo = KeychainAccess;
+		};
+		5B12A1E889E1C83926A0295161A05407 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1F6066DAC0E9293305836FE01990C48;
+			remoteInfo = AHDataModel;
+		};
+		678153BDC020B37819C3E03FACAE98A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F052D4129FF1BA68F76837862CB12FEA;
+			remoteInfo = SwiftyJSON;
+		};
+		6A6FECACB4154AB33B7771356B615FBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC6668F6A51A6E23A4FBA9DB71DCE709;
+			remoteInfo = AHFMServices;
+		};
+		73C332E5E54A10069F39F1B0686487BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87748AA572C7B415943A215892E52BA1;
+			remoteInfo = AHFMDataTransformers;
+		};
+		7BE33B039A2A7E8828569874AD499B33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1F6066DAC0E9293305836FE01990C48;
+			remoteInfo = AHDataModel;
+		};
+		7D29B1B47AC56D1D3DEAEFBCD358796E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 001307F593B684F88A2AA0964E7B41C9;
+			remoteInfo = UIDeviceExtension;
+		};
+		876826467347FB7714F15A345711368C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F052D4129FF1BA68F76837862CB12FEA;
+			remoteInfo = SwiftyJSON;
+		};
+		880D5707E2CBF89F96F5C570953C69A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC0C0580F94A4CBE8A20D7612732C564;
+			remoteInfo = KeychainAccess;
+		};
+		8F1250A0FD4CC930AB2C09ED4EB06745 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9914BB4B67CC8BD4959202620D0EC9D;
+			remoteInfo = AHFMDataCenter;
+		};
+		9CF361DDB2C1F511474196F5C3C53BF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D0744FA0F99F2CB757431FBC2DF1170;
+			remoteInfo = AHFMModuleManager;
+		};
+		A16A4C4A0A05B1EAC0170EBDB52AF907 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 001307F593B684F88A2AA0964E7B41C9;
+			remoteInfo = UIDeviceExtension;
+		};
+		D3D6F384C477B827DA5E2E8A68A4DC40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6447BA5C324920365AD12084BE3B94C0;
+			remoteInfo = Alamofire;
+		};
+		D760AA0921542FD098ACC90296CB556E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC0C0580F94A4CBE8A20D7612732C564;
+			remoteInfo = KeychainAccess;
+		};
+		D8E603A90746900A0EACE296A5F65966 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37F13E7194F463F9D017551F95E73FF2;
+			remoteInfo = AHFMNetworking;
+		};
+		DBBB239F2CCFE8D1CB488340A6BCDFB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9914BB4B67CC8BD4959202620D0EC9D;
+			remoteInfo = AHFMDataCenter;
+		};
+		E3E45DD47DB8BF23829E5BB2B5ABA337 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC6668F6A51A6E23A4FBA9DB71DCE709;
+			remoteInfo = AHFMServices;
+		};
+		E60EC99A9CDBD7F31FA78A22DA9BBB28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F052D4129FF1BA68F76837862CB12FEA;
+			remoteInfo = SwiftyJSON;
+		};
+		EDF853E368D2CD1876A36A9F0001A520 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD600E37EFF1E29E61F9B782A7561F69;
+			remoteInfo = AHFMAudioPlayerVCManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		004122160F0C7DD08D4FEE56E32EA3A3 /* AHFMAudioPlayerVCManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMAudioPlayerVCManager-prefix.pch"; sourceTree = "<group>"; };
+		05D1599A77EA6EB10DEFCCBA57EDA96E /* AHDB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHDB.swift; path = AHDataModel/Classes/AHDB.swift; sourceTree = "<group>"; };
+		086297BFC6FBB9E144822700E1D7B61C /* AHFMNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AHFMNetworking-dummy.m"; sourceTree = "<group>"; };
+		09AC079B1F4193744EFDD07FFDB83855 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		0ABFE1D3B9D6FA140C006ADF5D94C323 /* AHFMNetworking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHFMNetworking.swift; path = AHFMNetworking/Classes/AHFMNetworking.swift; sourceTree = "<group>"; };
+		0BDE0F245C54652BD03163F7107B5E01 /* AHFMAudioPlayerManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AHFMAudioPlayerManager.swift; sourceTree = "<group>"; };
+		0FE17C96A4B6EB145453F371BF24D5BA /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		10255F2A22CB04CD3C49848C74C14832 /* OAuth2Handler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Handler.swift; path = AHFMNetworking/Classes/OAuth2Handler.swift; sourceTree = "<group>"; };
+		120D9FA7AFDFABA632C4D36004D7FC25 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1221431E686D1A66956752111D72DBCB /* Pods-AHFMAudioPlayerVCManager_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AHFMAudioPlayerVCManager_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		13F9D3A18D21A02E50CD2A4C867B1A0B /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		14ABD65C409D19F1BA091F9F2461AE4F /* AHFMAudioPlayerVCServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHFMAudioPlayerVCServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1672678E3BF654346693A10EB3DC6A79 /* AHFMNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AHFMNetworking.framework; path = AHFMNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		169EF62D6932CA999B4B93737E5F5E27 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		171735C5DDED78174A853D8DA77B7750 /* AHFMServices-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMServices-prefix.pch"; sourceTree = "<group>"; };
+		1BFC1A6E2EED40AAEEF650E286165FB0 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CA42E9F61A83A652A348A3215A0B3E3 /* AHFMServices-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMServices-umbrella.h"; sourceTree = "<group>"; };
+		1ED0312039EF9B0583BDD035B343B906 /* Pods-AHFMAudioPlayerVCManager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AHFMAudioPlayerVCManager_Example.modulemap"; sourceTree = "<group>"; };
+		246186E1405C3A17C5CAF374DBA0CFDD /* AHDataModel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AHDataModel.xcconfig; sourceTree = "<group>"; };
+		26216483CD46DFF2BAE18BA84A09FE96 /* Pods_AHFMAudioPlayerVCManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AHFMAudioPlayerVCManager_Example.framework; path = "Pods-AHFMAudioPlayerVCManager_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27757B3292203F3A31493DD184E0AEE0 /* AHFMNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMNetworking-prefix.pch"; sourceTree = "<group>"; };
+		28F1B4B2C39328D8D708673419AE5D06 /* Migrator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Migrator.swift; path = AHDataModel/Classes/Migrator.swift; sourceTree = "<group>"; };
+		292582FFB9ADAE2A78D1C1BAC3B66AB6 /* AHServiceRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AHServiceRouter.framework; path = AHServiceRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29FC386E3E170D550D4A446E390DF786 /* AHFMAudioPlayerVCServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AHFMAudioPlayerVCServices.framework; path = AHFMAudioPlayerVCServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A1F03B64F22F4C1560595F8A7D30840 /* KeychainAccess.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainAccess.xcconfig; sourceTree = "<group>"; };
+		2A65A01C3D66CD4E511B0072E21737CA /* Pods-AHFMAudioPlayerVCManager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AHFMAudioPlayerVCManager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2CBBCDED6E4B4D6C98B480B2F789B514 /* KeychainAccess.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KeychainAccess.modulemap; sourceTree = "<group>"; };
+		30065464EE689CFA4C3FF785FF395785 /* AHFMDataCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHFMDataCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33D869B65D91B30D5BE03518AB0BE91D /* Pods-AHFMAudioPlayerVCManager_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AHFMAudioPlayerVCManager_Tests-umbrella.h"; sourceTree = "<group>"; };
+		3440038EEA5F963D773423B76DCBFE81 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34B6EF822AD7F40AD780EB9535638AD6 /* AHFMDataCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AHFMDataCenter.framework; path = AHFMDataCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		372541F756C09F83E4AE95879EE2202D /* AHFMDataTransformers.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AHFMDataTransformers.xcconfig; sourceTree = "<group>"; };
+		37F2EC8D464D54FE4ED3B58467FEDFFA /* AHServiceRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHServiceRouter.swift; path = AHServiceRouter/Classes/AHServiceRouter.swift; sourceTree = "<group>"; };
+		38C8383129B5F575F8161D2C7400070F /* AHServiceRouter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AHServiceRouter-dummy.m"; sourceTree = "<group>"; };
+		3A25AAE806588C9B13BFAC12ACCA5062 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		3B64834F4EEFBD438B891CE5BE23956D /* AHFMServices.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHFMServices.swift; path = AHFMServices/Classes/AHFMServices.swift; sourceTree = "<group>"; };
+		3FB75CCA6ECFA6A2D0835462F7A5B666 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		42265492CF4CD7E71A80CEC732BAD401 /* AHServiceRouter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHServiceRouter-umbrella.h"; sourceTree = "<group>"; };
+		422A1C7ABB9A6E0AD90D6920982723DB /* AHFMAudioPlayerVCServices.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AHFMAudioPlayerVCServices.xcconfig; sourceTree = "<group>"; };
+		4377DA9D227490D020D08FE873CE79EF /* AHFMServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHFMServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4495C99C4C0DF43963F14BDD01CC24C4 /* AHDataModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHDataModel-prefix.pch"; sourceTree = "<group>"; };
+		462DBBF62DC50E22C41A3B4410F003A0 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		4673DFDEDD5E2B12B1FCD0FBE16D2EF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4B2AB8BFECC4DF76A20673AE8787204A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C7804118000EE018AC69C859121A215 /* UIDeviceExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIDeviceExtension-umbrella.h"; sourceTree = "<group>"; };
+		4CF410BFDF499DAD3E71E1F987FF421A /* AHFMAudioPlayerVCManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AHFMAudioPlayerVCManager.framework; path = AHFMAudioPlayerVCManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E0E8716C47FEBB30B55C538B33054CD /* AHFMDataTransformers-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AHFMDataTransformers-dummy.m"; sourceTree = "<group>"; };
+		5551478DC97BB811E67D7967BFB1BB0E /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		563A8C620EB157A68C80BF24ED8511CB /* AHFMDataCenter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMDataCenter-prefix.pch"; sourceTree = "<group>"; };
+		56E9750F9A4A0F97A07FA9E5A603FC1E /* AHFMModuleManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMModuleManager-umbrella.h"; sourceTree = "<group>"; };
+		575A5E0C16BBBBFCF4A1B9E911749610 /* Pods-AHFMAudioPlayerVCManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AHFMAudioPlayerVCManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		59F93F1909E0741FBDEED8B710EA9C9F /* AHFMShow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHFMShow.swift; path = AHFMDataCenter/Classes/AHFMShow.swift; sourceTree = "<group>"; };
+		5A0A83D5D06C31A339B3A5262F71EFD9 /* AHFMModuleManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMModuleManager-prefix.pch"; sourceTree = "<group>"; };
+		5B1CAACF742D7E84EA8347E181152A9C /* Pods-AHFMAudioPlayerVCManager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AHFMAudioPlayerVCManager_Tests.modulemap"; sourceTree = "<group>"; };
+		5BC267F73ACEA09B7ADAA0640268D8A5 /* AHNetworkConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHNetworkConstants.swift; path = AHFMNetworking/Classes/AHNetworkConstants.swift; sourceTree = "<group>"; };
+		5E5E725BAFEAAFA94A9599BE89D35DD1 /* AHFMDataTransformers-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMDataTransformers-umbrella.h"; sourceTree = "<group>"; };
+		5EFE41ED4DD262751E0ACCE2E9786053 /* KeychainAccess-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainAccess-prefix.pch"; sourceTree = "<group>"; };
+		605BF00D99784733D362FEB5017E0786 /* AHFMModuleManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AHFMModuleManager.framework; path = AHFMModuleManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61A1C0A5CED1C19DB87A3AF9EC390E6C /* AHServiceRouter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AHServiceRouter.xcconfig; sourceTree = "<group>"; };
+		622399FA8125D14EE1BFF9AB0FB90C62 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		62B9A35554DCE37D22D7C356AD976BB6 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIDevice+Extension.swift"; path = "UIDeviceExtension/Classes/UIDevice+Extension.swift"; sourceTree = "<group>"; };
+		62BF859D39485A81BCFB54C34559A7C1 /* AHDataModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AHDataModel.framework; path = AHDataModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62D272B319F08BFFAB5B3A6B5FC19BE3 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		670156A8B2BB61A52EE09AC20BE7425C /* AHFMShowTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHFMShowTransform.swift; path = AHFMDataTransformers/Classes/AHFMShowTransform.swift; sourceTree = "<group>"; };
+		68A7BBC6A0237B917704F9D56A9E37F8 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		694BB110FB73F478534C2AF7F298878A /* Pods-AHFMAudioPlayerVCManager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AHFMAudioPlayerVCManager_Example-dummy.m"; sourceTree = "<group>"; };
+		6A7F685F3FADFE52B47C0F28D88C1C7E /* AHDBColumnInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHDBColumnInfo.swift; path = AHDataModel/Classes/AHDBColumnInfo.swift; sourceTree = "<group>"; };
+		6B3DC839B9A4097FBD1C70C8EB2E534B /* AHServiceRouter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AHServiceRouter.modulemap; sourceTree = "<group>"; };
+		6B9E35623AC1E5E433925DAA054F1884 /* module.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = module.modulemap; path = ModuleMaps/iphoneos/module.modulemap; sourceTree = "<group>"; };
+		6FB663794097DF782E76DF064B858084 /* Pods-AHFMAudioPlayerVCManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AHFMAudioPlayerVCManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		709C8B820DB37D46A6AC98572AB4D3A9 /* AHFMAudioPlayerVCManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMAudioPlayerVCManager-umbrella.h"; sourceTree = "<group>"; };
+		717A3714665E55B45BB6F992204260FE /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72CA2523F8AA9538FFF0101027516A0E /* AHServiceRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHServiceRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73755C6B2725F3E4E973D9778B6843C5 /* UIDeviceExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIDeviceExtension-prefix.pch"; sourceTree = "<group>"; };
+		73F0C68FFF92312470C6187B132F74F4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74454C417F30754B13740993E0570B5A /* AHFMDataTransformers.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AHFMDataTransformers.modulemap; sourceTree = "<group>"; };
+		75770AF5FB1296BE1D98A166AA13A3FC /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		75B972EFE6E3CC7911FCC4CE26D0B13A /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		76F6C86AC5C38711C4AD86C85F6B25AB /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		792C2492ADB2F724B60B7FBBB06E384B /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		79BB7D2A42A3DEFE35A16335CE92B8BE /* AHFMDataTransformers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AHFMDataTransformers.framework; path = AHFMDataTransformers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A1A602225A6A740AE37168C703E001E /* Pods-AHFMAudioPlayerVCManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AHFMAudioPlayerVCManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		7B4BB33039AB60ED4DE970DB0C8C1A6D /* AHFMNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMNetworking-umbrella.h"; sourceTree = "<group>"; };
+		7CEF41D4CD23467DF6C131552A56A132 /* Pods-AHFMAudioPlayerVCManager_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AHFMAudioPlayerVCManager_Example-frameworks.sh"; sourceTree = "<group>"; };
+		7E43A3E4D3B892CD5C4C55E61379CE46 /* AHDataModel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AHDataModel.modulemap; sourceTree = "<group>"; };
+		7EF7C986D6AF7AAE3E09C7884A7FE8F0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F22C68D223D0CC59FD740E1612E9992 /* AHFMModuleManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AHFMModuleManager-dummy.m"; sourceTree = "<group>"; };
+		8048D9D99CE8E06FF9605DF65FA616DF /* AHDataModel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHDataModel-umbrella.h"; sourceTree = "<group>"; };
+		817F7C639FFFD486C5CF3CB93D3CB74B /* AHFMAudioPlayerVCManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AHFMAudioPlayerVCManager.modulemap; sourceTree = "<group>"; };
+		821869D2F9B964D4EC148B03B25377E8 /* AHFMManagerHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AHFMManagerHandler.swift; sourceTree = "<group>"; };
+		840DCF86B157698542521D50D54EF446 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		8504930D1469365ED61C708C72947F38 /* AHFMNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AHFMNetworking.modulemap; sourceTree = "<group>"; };
+		858FE4B24BCD645EBF0FF56CA416BC91 /* AHFMDataTransformers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHFMDataTransformers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86B2AE17B315A587EFDBD41F16C42373 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88715EA31689CB0D5E1C1D4F7C54F4C7 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		8A051F0B61ADE8BC11B80F1B917BBE07 /* AHFMDataCenter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AHFMDataCenter.modulemap; sourceTree = "<group>"; };
+		8C169D7A2B8E3E4DD944718D2301FFA0 /* UIDeviceExtension.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIDeviceExtension.xcconfig; sourceTree = "<group>"; };
+		8C5D875FE528B112C7AFADBFB0B397B9 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		8C65243DBD7E939838BD25D6E2F2DD69 /* Pods_AHFMAudioPlayerVCManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AHFMAudioPlayerVCManager_Tests.framework; path = "Pods-AHFMAudioPlayerVCManager_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DB8C563B118F43C9AB2EC58BADF5787 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		8F12B22685EA8D2E1753922AEC8051B5 /* AHFMAudioPlayerVCServices.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHFMAudioPlayerVCServices.swift; path = AHFMAudioPlayerVCServices/Classes/AHFMAudioPlayerVCServices.swift; sourceTree = "<group>"; };
+		8FDEC495359C6F256004EB96A8960B78 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		902483E0E0B5EF47C65DD3828331C2D3 /* AHFMAudioPlayerVCManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AHFMAudioPlayerVCManager-dummy.m"; sourceTree = "<group>"; };
+		918C329CBC38D9537E6C806A6C938581 /* AHFMAudioPlayerVCServices-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AHFMAudioPlayerVCServices-dummy.m"; sourceTree = "<group>"; };
+		92B241992DA81A58BE07A106600F8D1B /* AHFMSubscribedShow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHFMSubscribedShow.swift; path = AHFMDataCenter/Classes/AHFMSubscribedShow.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		940F1F85F58E3561BE1520189EB62605 /* AHFMAudioPlayerVCServices-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMAudioPlayerVCServices-umbrella.h"; sourceTree = "<group>"; };
+		94605675739D30D7F5B4F0933AF6A589 /* module.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = module.modulemap; path = ModuleMaps/iphonesimulator/module.modulemap; sourceTree = "<group>"; };
+		9504DD247F39D89593F9883CC65344F3 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		9768CF69BB4FEE07D530597931EAEEC2 /* AHFMModuleManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHFMModuleManager.swift; path = AHFMModuleManager/Classes/AHFMModuleManager.swift; sourceTree = "<group>"; };
+		979A2381840E5EDE0E92A95A055BFF58 /* UIDeviceExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = UIDeviceExtension.modulemap; sourceTree = "<group>"; };
+		984BE8ECD5BC98795C9276E6BB9C25C5 /* Pods-AHFMAudioPlayerVCManager_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AHFMAudioPlayerVCManager_Example-resources.sh"; sourceTree = "<group>"; };
+		987D2752E5AA8E9F3C06213081FF47E0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99FD3E1D6CA04F41630AACAC11DDF6C4 /* KeychainAccess-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainAccess-umbrella.h"; sourceTree = "<group>"; };
+		9AEC3C89D19CC08AE5B9E27E62A8EF76 /* Pods-AHFMAudioPlayerVCManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AHFMAudioPlayerVCManager_Example.release.xcconfig"; sourceTree = "<group>"; };
+		9C0E71D46C390C86ABA82EC148D49D82 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E2C8656B23112A7D5D9BEF6BA3D56CE /* AHFMAudioPlayerVCServices-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMAudioPlayerVCServices-prefix.pch"; sourceTree = "<group>"; };
+		9EE307A3F114C0ACC69215060A999272 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F06E3B79870B2B86436AD21F8A926CC /* AHFMModuleManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHFMModuleManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0157AFD3A08DE1D6862902E3F426713 /* AHFMServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AHFMServices.framework; path = AHFMServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A17E40B2056F1A733C4238FE85FC1DFC /* AHFMDataTransformers-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMDataTransformers-prefix.pch"; sourceTree = "<group>"; };
+		A266E47AE38B0691A19B86876E911ACC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A57CDDA629B4D8749F7AA37B90286700 /* Pods-AHFMAudioPlayerVCManager_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AHFMAudioPlayerVCManager_Example-umbrella.h"; sourceTree = "<group>"; };
+		AA8ECE59670826CF7F6E0E57BF17806A /* Pods-AHFMAudioPlayerVCManager_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AHFMAudioPlayerVCManager_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		AB87E2EAB0E1E171C7551F8778008022 /* AHDataModelQuery.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHDataModelQuery.swift; path = AHDataModel/Classes/AHDataModelQuery.swift; sourceTree = "<group>"; };
+		B196071C7B7CE5D97F09D915F94093C3 /* AHDatabase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHDatabase.swift; path = AHDataModel/Classes/AHDatabase.swift; sourceTree = "<group>"; };
+		B1BE179720555631043E45268138ACF2 /* AHFMEpisodeInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHFMEpisodeInfo.swift; path = AHFMDataCenter/Classes/AHFMEpisodeInfo.swift; sourceTree = "<group>"; };
+		B2468804EFD27BB649BCF5E0ED2FBBA4 /* AHFMEpisodeHistory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHFMEpisodeHistory.swift; path = AHFMDataCenter/Classes/AHFMEpisodeHistory.swift; sourceTree = "<group>"; };
+		B2FA1F53208AEB27F2BEF3C03A56A4A2 /* AHFMServices.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AHFMServices.modulemap; sourceTree = "<group>"; };
+		B3B7D3EB615B29353AA92429FDF36594 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		B3F56C4424D2A43885D84FA6EAEFA059 /* AHFMModuleManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AHFMModuleManager.modulemap; sourceTree = "<group>"; };
+		B4C41E7586A8F6098ACF83D587E7DF54 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7084D49E7A9084C5534018FBD1FA05A /* UIDeviceExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIDeviceExtension-dummy.m"; sourceTree = "<group>"; };
+		B8916B9007F8E5317E85BCAFCD623850 /* Pods-AHFMAudioPlayerVCManager_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AHFMAudioPlayerVCManager_Tests-resources.sh"; sourceTree = "<group>"; };
+		B9FF5E2FF4E092095FF3BA5F04C311D3 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		BB0DD81BD90B05EFEECCE79D2048940E /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		BF2C5DC6663BE33D4E264ACBAF07E304 /* AHFMServices.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AHFMServices.xcconfig; sourceTree = "<group>"; };
+		BFA8611E993B1707A26D4333BCE18AF6 /* Pods-AHFMAudioPlayerVCManager_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AHFMAudioPlayerVCManager_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C054053FFB73993762B0AC721EDF5B52 /* AHServiceRouter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHServiceRouter-prefix.pch"; sourceTree = "<group>"; };
+		C0742D841AA555434F4DD4B812B5006E /* AHFMDataCenter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AHFMDataCenter-dummy.m"; sourceTree = "<group>"; };
+		C28696F5CA483216095C981EA32E7DFA /* AHFMAudioPlayerVCManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AHFMAudioPlayerVCManager.xcconfig; sourceTree = "<group>"; };
+		C34804CDB08CFC2E615EC88CE1256644 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		C35800FEC79B1C0D91DA2E016898057B /* AHFMDataCenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHFMDataCenter.swift; path = AHFMDataCenter/Classes/AHFMDataCenter.swift; sourceTree = "<group>"; };
+		C52E0E2E7933983F4464B14B41E0E641 /* AHFMServices-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AHFMServices-dummy.m"; sourceTree = "<group>"; };
+		C70565726B4C9ED60828B499E52935FB /* AHFMEpisode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHFMEpisode.swift; path = AHFMDataCenter/Classes/AHFMEpisode.swift; sourceTree = "<group>"; };
+		C7EE4AFEC0BA75EBCA27E32CF153C398 /* UIDeviceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIDeviceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C821F5BAF2E7DFFD9AFF3ED4E475C630 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		CC8D962C7536423715635353B1575066 /* AHDataModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHDataModel.swift; path = AHDataModel/Classes/AHDataModel.swift; sourceTree = "<group>"; };
+		CE5ECBE51AECD73CBFE1061290F54925 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF6CD2D4AC3DA364D01B0B8C731BD175 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		D035EF31B4534599CB2ADB29FD1D48C2 /* AHFMDataCenter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMDataCenter-umbrella.h"; sourceTree = "<group>"; };
+		D0772A4CDCB1634F5D7EC09FFED40B31 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1555D0A818F1C21CF9DD603E3537BA6 /* Pods-AHFMAudioPlayerVCManager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AHFMAudioPlayerVCManager_Tests-dummy.m"; sourceTree = "<group>"; };
+		D2058A38169468C6C5B36F37686AAF3B /* AHFMModuleManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AHFMModuleManager.xcconfig; sourceTree = "<group>"; };
+		D247790742B033FF8873A49040609D39 /* AHDataModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHDataModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D300377462B4C2173800362DD3FCEF14 /* AHFMAudioPlayerVCServices.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AHFMAudioPlayerVCServices.modulemap; sourceTree = "<group>"; };
+		D7BA3275EA5755ACF795FB6E7A525518 /* AHDataModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AHDataModel-dummy.m"; sourceTree = "<group>"; };
+		D8C744D937EDFC21540250C97D5E84DD /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = Lib/KeychainAccess/Keychain.swift; sourceTree = "<group>"; };
+		D970049574DF0689EDCDBACE686D6821 /* AHKeychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHKeychain.swift; path = AHFMNetworking/Classes/AHKeychain.swift; sourceTree = "<group>"; };
+		DAEC748E0336D67BD815BB91596FD27E /* AHFMNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHFMNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC46D497F44643F48D54F10023BF7837 /* UIDeviceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UIDeviceExtension.framework; path = UIDeviceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC944AF82165D87BFDC557ADDB589B0B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6B4DC63AFB3B8BDF7A716EE45AF7F20 /* AHFMNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AHFMNetworking.xcconfig; sourceTree = "<group>"; };
+		EC575D3C8FCD911F8B6D274092ABA43A /* KeychainAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KeychainAccess.framework; path = KeychainAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F06D35E96C125CA593B9A863785DA2D9 /* AHFMEpisodeTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHFMEpisodeTransform.swift; path = AHFMDataTransformers/Classes/AHFMEpisodeTransform.swift; sourceTree = "<group>"; };
+		F12F1623407EEE35B97708E43D187826 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		F16977CC9D2AA9FEB22770AB07EE8B32 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F20126E086271532CA9B5ABCC885D309 /* AHFMDataCenter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AHFMDataCenter.xcconfig; sourceTree = "<group>"; };
+		F3B710EE6965BAFC2B5B7B1F667F661E /* Pods-AHFMAudioPlayerVCManager_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AHFMAudioPlayerVCManager_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		F3C582F6C5DE74289924182582976962 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		F8BA37B5654414ABE671FA8FF3D75FA9 /* KeychainAccess-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeychainAccess-dummy.m"; sourceTree = "<group>"; };
+		F8F76C02530BAA5253BE52E8D5D7FD16 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		FC74925D0B198E41419EB6AB4606AC62 /* Migration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Migration.swift; path = AHDataModel/Classes/Migration.swift; sourceTree = "<group>"; };
+		FE71540C9F4D93F31AB171EB03C7E6D8 /* KeychainAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeychainAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DF39498EF37B273BF25ECCE7A88B0E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A92E76DB0408496D6E8B6D9B2A58E1FF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61177F725E811FEB74A2EC4719DD716D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8856DCBBD8410624FFED283B38F64FA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73D0497C93FA07A0CDF495ED7FBC794D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7A7A5D2C62FA25EBC8B8A8BBB2A3483 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E435011B77451DCE04DCE7CE0A23D09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52085FF9F28EBD563637FEAD528B70AE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		982C14D078BB4BDC845D7A140C1DCB0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28C352D69E5A0710099A6BE809159702 /* AHDataModel.framework in Frameworks */,
+				E8C444D4A46F753671BCB772BC47E626 /* Foundation.framework in Frameworks */,
+				0E2654844FF5C11A201626556904DC0C /* UIDeviceExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		986424D6FE600AE995D45F0387F63F1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDE4594A6CD955ED1B4F27B25E088599 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7E8A16B7EE86A2A118FB9977EBB6D37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CABCA0975796E5011BEBCF0A78F81B3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8AA1B039F5749D91282FE199B8F6797 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				792419F4CAD03C23F9BBA18145A707E3 /* Foundation.framework in Frameworks */,
+				0D307173036F5A0D5C45A4D77399CBA6 /* SwiftyJSON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC0C56FCF01B098881030BA6240020D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1C0A0DF492C806A671F30DED35FD34F /* Alamofire.framework in Frameworks */,
+				4C31DBB2F301129C2BAA884FBC2D1FA3 /* Foundation.framework in Frameworks */,
+				8A7E7F1C57A50A28A6BDBF427071816C /* KeychainAccess.framework in Frameworks */,
+				F999B7016FF641BCBEAAC2CC1DFF1592 /* SwiftyJSON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C55A0F56681A4AA4B0B693E6AAE36065 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F465701DFD340AE895ADEF2B0A93BDB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7DDD12B8772E064EE7F00A54CB56725 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F1AC857FA6DC9A64ED08D7047CF061 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFA6571D12C8E22472923CCB6F0C5563 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9999F17A41ADF1CC5BFEE4947F9DA7D /* AHDataModel.framework in Frameworks */,
+				79A2D9A6435F394FC407B709739A1AB0 /* AHFMAudioPlayerVCServices.framework in Frameworks */,
+				9352C250D3B0304222B405253F6D8C44 /* AHFMDataCenter.framework in Frameworks */,
+				8E9F37465E6996423D95194CF0B30B78 /* AHFMDataTransformers.framework in Frameworks */,
+				33D10529AF3D8E6C86A5AE5AF9E2DCCA /* AHFMModuleManager.framework in Frameworks */,
+				C6F4884CD185FEEFD03A64F00E4ACC86 /* AHFMNetworking.framework in Frameworks */,
+				064FC6BE63716F6CDE7DC667A92D8E51 /* AHFMServices.framework in Frameworks */,
+				1CCEB9C4888138BD1E8293CCCFEEEAA2 /* AHServiceRouter.framework in Frameworks */,
+				4E9154EE89752A163F835239910D9039 /* Alamofire.framework in Frameworks */,
+				671E6FB538A13B18100CE9A7D2AD8A19 /* Foundation.framework in Frameworks */,
+				C5D0047506CFD843471F1E399F3AD6D4 /* KeychainAccess.framework in Frameworks */,
+				45DB82BDE3167C6D7EDF6939B03C0DC9 /* SwiftyJSON.framework in Frameworks */,
+				59D67D8A1E75FA4C4EB3F29A10B9EC48 /* UIDeviceExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1E2AC4491609CD0704FD6963008AD6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1339B97877D363A3DE27D00F49C9BA6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3CD120F8421A5070E00F994BD409508 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				111C28295331939AEBD0B2CACBD65A3E /* AHFMServices.framework in Frameworks */,
+				48317F1DD022EFA13835DE5B43309203 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC26ED50CC18FC322AC06BF561955549 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CF2FFAEE798B5757C18E997331D44B0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A90E132D10A2E56C9400A2CD493A537 /* Pods-AHFMAudioPlayerVCManager_Example */ = {
+			isa = PBXGroup;
+			children = (
+				3440038EEA5F963D773423B76DCBFE81 /* Info.plist */,
+				1ED0312039EF9B0583BDD035B343B906 /* Pods-AHFMAudioPlayerVCManager_Example.modulemap */,
+				2A65A01C3D66CD4E511B0072E21737CA /* Pods-AHFMAudioPlayerVCManager_Example-acknowledgements.markdown */,
+				AA8ECE59670826CF7F6E0E57BF17806A /* Pods-AHFMAudioPlayerVCManager_Example-acknowledgements.plist */,
+				694BB110FB73F478534C2AF7F298878A /* Pods-AHFMAudioPlayerVCManager_Example-dummy.m */,
+				7CEF41D4CD23467DF6C131552A56A132 /* Pods-AHFMAudioPlayerVCManager_Example-frameworks.sh */,
+				984BE8ECD5BC98795C9276E6BB9C25C5 /* Pods-AHFMAudioPlayerVCManager_Example-resources.sh */,
+				A57CDDA629B4D8749F7AA37B90286700 /* Pods-AHFMAudioPlayerVCManager_Example-umbrella.h */,
+				6FB663794097DF782E76DF064B858084 /* Pods-AHFMAudioPlayerVCManager_Example.debug.xcconfig */,
+				9AEC3C89D19CC08AE5B9E27E62A8EF76 /* Pods-AHFMAudioPlayerVCManager_Example.release.xcconfig */,
+			);
+			name = "Pods-AHFMAudioPlayerVCManager_Example";
+			path = "Target Support Files/Pods-AHFMAudioPlayerVCManager_Example";
+			sourceTree = "<group>";
+		};
+		0CD04104773C30BF8939E4017DEFFE24 /* AHFMAudioPlayerVCManager */ = {
+			isa = PBXGroup;
+			children = (
+				9191B531C46A754814D08E536C86DCBD /* AHFMAudioPlayerVCManager */,
+				B4C7C90AC1BE342468108B30F5D615A0 /* Support Files */,
+			);
+			name = AHFMAudioPlayerVCManager;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		1186D65A98B88CBB149D6EF098E20E5E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0BDE0F245C54652BD03163F7107B5E01 /* AHFMAudioPlayerManager.swift */,
+				821869D2F9B964D4EC148B03B25377E8 /* AHFMManagerHandler.swift */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		123E39B2AB30E6D05AA1E3192496E103 /* AHFMNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				0ABFE1D3B9D6FA140C006ADF5D94C323 /* AHFMNetworking.swift */,
+				D970049574DF0689EDCDBACE686D6821 /* AHKeychain.swift */,
+				5BC267F73ACEA09B7ADAA0640268D8A5 /* AHNetworkConstants.swift */,
+				10255F2A22CB04CD3C49848C74C14832 /* OAuth2Handler.swift */,
+				A22E3F8294066F3912A3ED615E705039 /* Support Files */,
+			);
+			name = AHFMNetworking;
+			path = AHFMNetworking;
+			sourceTree = "<group>";
+		};
+		178915CA26DA46A5011A97660BB4CD4D /* UIDeviceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				62B9A35554DCE37D22D7C356AD976BB6 /* UIDevice+Extension.swift */,
+				BA5E3C6D176779A05DB563B080556FFB /* Support Files */,
+			);
+			name = UIDeviceExtension;
+			path = UIDeviceExtension;
+			sourceTree = "<group>";
+		};
+		1ABC33D769FC0E5E85F4A6EA9AB58668 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				75B972EFE6E3CC7911FCC4CE26D0B13A /* AFError.swift */,
+				B9FF5E2FF4E092095FF3BA5F04C311D3 /* Alamofire.swift */,
+				68A7BBC6A0237B917704F9D56A9E37F8 /* DispatchQueue+Alamofire.swift */,
+				8C5D875FE528B112C7AFADBFB0B397B9 /* MultipartFormData.swift */,
+				62D272B319F08BFFAB5B3A6B5FC19BE3 /* NetworkReachabilityManager.swift */,
+				F12F1623407EEE35B97708E43D187826 /* Notifications.swift */,
+				462DBBF62DC50E22C41A3B4410F003A0 /* ParameterEncoding.swift */,
+				B3B7D3EB615B29353AA92429FDF36594 /* Request.swift */,
+				C34804CDB08CFC2E615EC88CE1256644 /* Response.swift */,
+				13F9D3A18D21A02E50CD2A4C867B1A0B /* ResponseSerialization.swift */,
+				9504DD247F39D89593F9883CC65344F3 /* Result.swift */,
+				BB0DD81BD90B05EFEECCE79D2048940E /* ServerTrustPolicy.swift */,
+				840DCF86B157698542521D50D54EF446 /* SessionDelegate.swift */,
+				88715EA31689CB0D5E1C1D4F7C54F4C7 /* SessionManager.swift */,
+				CF6CD2D4AC3DA364D01B0B8C731BD175 /* TaskDelegate.swift */,
+				792C2492ADB2F724B60B7FBBB06E384B /* Timeline.swift */,
+				622399FA8125D14EE1BFF9AB0FB90C62 /* Validation.swift */,
+				E22353B168AB896BB13306FEAAE5A5CE /* Support Files */,
+			);
+			name = Alamofire;
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		251E6CDCEC685D8EFF4224C3419C03CC /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0CD04104773C30BF8939E4017DEFFE24 /* AHFMAudioPlayerVCManager */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		26B7B5B25D6732ABCB89F6C46B2001A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF0D6B09945399A2CFF69797F32EA80D /* AHDataModel */,
+				9C3A4AA3AD75BF25B514BA8C31DE3B8D /* AHFMAudioPlayerVCServices */,
+				F622933BE4D7318DAE3867BAC54C7726 /* AHFMDataCenter */,
+				435EB475D6088420A41872AD8FF04315 /* AHFMDataTransformers */,
+				6D98CA238AA56778C121C325C2FD3A9D /* AHFMModuleManager */,
+				123E39B2AB30E6D05AA1E3192496E103 /* AHFMNetworking */,
+				750E8606401522F9064DEB82655CED57 /* AHFMServices */,
+				AE6A412BA2563C7374AECED10D5CB616 /* AHServiceRouter */,
+				1ABC33D769FC0E5E85F4A6EA9AB58668 /* Alamofire */,
+				41FA42504A3F4FA62CA82E93A3980D46 /* KeychainAccess */,
+				C03415FB6FCEFFF60F7547A3E71F3038 /* SwiftyJSON */,
+				178915CA26DA46A5011A97660BB4CD4D /* UIDeviceExtension */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		277063F7611E4A5A658C80DD50D45363 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2FA1F53208AEB27F2BEF3C03A56A4A2 /* AHFMServices.modulemap */,
+				BF2C5DC6663BE33D4E264ACBAF07E304 /* AHFMServices.xcconfig */,
+				C52E0E2E7933983F4464B14B41E0E641 /* AHFMServices-dummy.m */,
+				171735C5DDED78174A853D8DA77B7750 /* AHFMServices-prefix.pch */,
+				1CA42E9F61A83A652A348A3215A0B3E3 /* AHFMServices-umbrella.h */,
+				B4C41E7586A8F6098ACF83D587E7DF54 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AHFMServices";
+			sourceTree = "<group>";
+		};
+		2F27AE43A3AC56BED8A80AE2421FF577 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4673DFDEDD5E2B12B1FCD0FBE16D2EF0 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		360AF14894DFD8051F026EFCC3583B63 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A051F0B61ADE8BC11B80F1B917BBE07 /* AHFMDataCenter.modulemap */,
+				F20126E086271532CA9B5ABCC885D309 /* AHFMDataCenter.xcconfig */,
+				C0742D841AA555434F4DD4B812B5006E /* AHFMDataCenter-dummy.m */,
+				563A8C620EB157A68C80BF24ED8511CB /* AHFMDataCenter-prefix.pch */,
+				D035EF31B4534599CB2ADB29FD1D48C2 /* AHFMDataCenter-umbrella.h */,
+				9EE307A3F114C0ACC69215060A999272 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AHFMDataCenter";
+			sourceTree = "<group>";
+		};
+		41FA42504A3F4FA62CA82E93A3980D46 /* KeychainAccess */ = {
+			isa = PBXGroup;
+			children = (
+				D8C744D937EDFC21540250C97D5E84DD /* Keychain.swift */,
+				DC76DE69A4867993F05D23DE239E4B1F /* Support Files */,
+			);
+			name = KeychainAccess;
+			path = KeychainAccess;
+			sourceTree = "<group>";
+		};
+		435EB475D6088420A41872AD8FF04315 /* AHFMDataTransformers */ = {
+			isa = PBXGroup;
+			children = (
+				F06D35E96C125CA593B9A863785DA2D9 /* AHFMEpisodeTransform.swift */,
+				670156A8B2BB61A52EE09AC20BE7425C /* AHFMShowTransform.swift */,
+				EBF0FF333CB83243785E7BE2D064B6F4 /* Support Files */,
+			);
+			name = AHFMDataTransformers;
+			path = AHFMDataTransformers;
+			sourceTree = "<group>";
+		};
+		4D770D425AC5A29ADC4651BF51738674 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D300377462B4C2173800362DD3FCEF14 /* AHFMAudioPlayerVCServices.modulemap */,
+				422A1C7ABB9A6E0AD90D6920982723DB /* AHFMAudioPlayerVCServices.xcconfig */,
+				918C329CBC38D9537E6C806A6C938581 /* AHFMAudioPlayerVCServices-dummy.m */,
+				9E2C8656B23112A7D5D9BEF6BA3D56CE /* AHFMAudioPlayerVCServices-prefix.pch */,
+				940F1F85F58E3561BE1520189EB62605 /* AHFMAudioPlayerVCServices-umbrella.h */,
+				A266E47AE38B0691A19B86876E911ACC /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AHFMAudioPlayerVCServices";
+			sourceTree = "<group>";
+		};
+		55AF74F3C8FAF6FEF50ADB3D412D1442 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B3DC839B9A4097FBD1C70C8EB2E534B /* AHServiceRouter.modulemap */,
+				61A1C0A5CED1C19DB87A3AF9EC390E6C /* AHServiceRouter.xcconfig */,
+				38C8383129B5F575F8161D2C7400070F /* AHServiceRouter-dummy.m */,
+				C054053FFB73993762B0AC721EDF5B52 /* AHServiceRouter-prefix.pch */,
+				42265492CF4CD7E71A80CEC732BAD401 /* AHServiceRouter-umbrella.h */,
+				CE5ECBE51AECD73CBFE1061290F54925 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AHServiceRouter";
+			sourceTree = "<group>";
+		};
+		5924E8BCEFEF6461D69657CBA9776134 /* Pods-AHFMAudioPlayerVCManager_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				987D2752E5AA8E9F3C06213081FF47E0 /* Info.plist */,
+				5B1CAACF742D7E84EA8347E181152A9C /* Pods-AHFMAudioPlayerVCManager_Tests.modulemap */,
+				1221431E686D1A66956752111D72DBCB /* Pods-AHFMAudioPlayerVCManager_Tests-acknowledgements.markdown */,
+				BFA8611E993B1707A26D4333BCE18AF6 /* Pods-AHFMAudioPlayerVCManager_Tests-acknowledgements.plist */,
+				D1555D0A818F1C21CF9DD603E3537BA6 /* Pods-AHFMAudioPlayerVCManager_Tests-dummy.m */,
+				F3B710EE6965BAFC2B5B7B1F667F661E /* Pods-AHFMAudioPlayerVCManager_Tests-frameworks.sh */,
+				B8916B9007F8E5317E85BCAFCD623850 /* Pods-AHFMAudioPlayerVCManager_Tests-resources.sh */,
+				33D869B65D91B30D5BE03518AB0BE91D /* Pods-AHFMAudioPlayerVCManager_Tests-umbrella.h */,
+				7A1A602225A6A740AE37168C703E001E /* Pods-AHFMAudioPlayerVCManager_Tests.debug.xcconfig */,
+				575A5E0C16BBBBFCF4A1B9E911749610 /* Pods-AHFMAudioPlayerVCManager_Tests.release.xcconfig */,
+			);
+			name = "Pods-AHFMAudioPlayerVCManager_Tests";
+			path = "Target Support Files/Pods-AHFMAudioPlayerVCManager_Tests";
+			sourceTree = "<group>";
+		};
+		6D98CA238AA56778C121C325C2FD3A9D /* AHFMModuleManager */ = {
+			isa = PBXGroup;
+			children = (
+				9768CF69BB4FEE07D530597931EAEEC2 /* AHFMModuleManager.swift */,
+				ADB47218F076A4EA7770994602D5D79F /* Support Files */,
+			);
+			name = AHFMModuleManager;
+			path = AHFMModuleManager;
+			sourceTree = "<group>";
+		};
+		750E8606401522F9064DEB82655CED57 /* AHFMServices */ = {
+			isa = PBXGroup;
+			children = (
+				3B64834F4EEFBD438B891CE5BE23956D /* AHFMServices.swift */,
+				277063F7611E4A5A658C80DD50D45363 /* Support Files */,
+			);
+			name = AHFMServices;
+			path = AHFMServices;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				251E6CDCEC685D8EFF4224C3419C03CC /* Development Pods */,
+				DF3E67ADFD36C1891CCDB0A75C627B14 /* Frameworks */,
+				26B7B5B25D6732ABCB89F6C46B2001A5 /* Pods */,
+				9D38E252D13256044516B226892588DB /* Products */,
+				7F3F758AA9EFFEF776371C62E993829B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7F3F758AA9EFFEF776371C62E993829B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A90E132D10A2E56C9400A2CD493A537 /* Pods-AHFMAudioPlayerVCManager_Example */,
+				5924E8BCEFEF6461D69657CBA9776134 /* Pods-AHFMAudioPlayerVCManager_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9191B531C46A754814D08E536C86DCBD /* AHFMAudioPlayerVCManager */ = {
+			isa = PBXGroup;
+			children = (
+				1186D65A98B88CBB149D6EF098E20E5E /* Classes */,
+			);
+			name = AHFMAudioPlayerVCManager;
+			path = AHFMAudioPlayerVCManager;
+			sourceTree = "<group>";
+		};
+		9C3A4AA3AD75BF25B514BA8C31DE3B8D /* AHFMAudioPlayerVCServices */ = {
+			isa = PBXGroup;
+			children = (
+				8F12B22685EA8D2E1753922AEC8051B5 /* AHFMAudioPlayerVCServices.swift */,
+				4D770D425AC5A29ADC4651BF51738674 /* Support Files */,
+			);
+			name = AHFMAudioPlayerVCServices;
+			path = AHFMAudioPlayerVCServices;
+			sourceTree = "<group>";
+		};
+		9D38E252D13256044516B226892588DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62BF859D39485A81BCFB54C34559A7C1 /* AHDataModel.framework */,
+				4CF410BFDF499DAD3E71E1F987FF421A /* AHFMAudioPlayerVCManager.framework */,
+				29FC386E3E170D550D4A446E390DF786 /* AHFMAudioPlayerVCServices.framework */,
+				34B6EF822AD7F40AD780EB9535638AD6 /* AHFMDataCenter.framework */,
+				79BB7D2A42A3DEFE35A16335CE92B8BE /* AHFMDataTransformers.framework */,
+				605BF00D99784733D362FEB5017E0786 /* AHFMModuleManager.framework */,
+				1672678E3BF654346693A10EB3DC6A79 /* AHFMNetworking.framework */,
+				A0157AFD3A08DE1D6862902E3F426713 /* AHFMServices.framework */,
+				292582FFB9ADAE2A78D1C1BAC3B66AB6 /* AHServiceRouter.framework */,
+				1BFC1A6E2EED40AAEEF650E286165FB0 /* Alamofire.framework */,
+				EC575D3C8FCD911F8B6D274092ABA43A /* KeychainAccess.framework */,
+				26216483CD46DFF2BAE18BA84A09FE96 /* Pods_AHFMAudioPlayerVCManager_Example.framework */,
+				8C65243DBD7E939838BD25D6E2F2DD69 /* Pods_AHFMAudioPlayerVCManager_Tests.framework */,
+				D0772A4CDCB1634F5D7EC09FFED40B31 /* SwiftyJSON.framework */,
+				DC46D497F44643F48D54F10023BF7837 /* UIDeviceExtension.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A22E3F8294066F3912A3ED615E705039 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8504930D1469365ED61C708C72947F38 /* AHFMNetworking.modulemap */,
+				E6B4DC63AFB3B8BDF7A716EE45AF7F20 /* AHFMNetworking.xcconfig */,
+				086297BFC6FBB9E144822700E1D7B61C /* AHFMNetworking-dummy.m */,
+				27757B3292203F3A31493DD184E0AEE0 /* AHFMNetworking-prefix.pch */,
+				7B4BB33039AB60ED4DE970DB0C8C1A6D /* AHFMNetworking-umbrella.h */,
+				7EF7C986D6AF7AAE3E09C7884A7FE8F0 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AHFMNetworking";
+			sourceTree = "<group>";
+		};
+		AAE5906713570721A38FAE8EAE4E4402 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				86B2AE17B315A587EFDBD41F16C42373 /* Info.plist */,
+				F3C582F6C5DE74289924182582976962 /* SwiftyJSON.modulemap */,
+				3FB75CCA6ECFA6A2D0835462F7A5B666 /* SwiftyJSON.xcconfig */,
+				76F6C86AC5C38711C4AD86C85F6B25AB /* SwiftyJSON-dummy.m */,
+				0FE17C96A4B6EB145453F371BF24D5BA /* SwiftyJSON-prefix.pch */,
+				8DB8C563B118F43C9AB2EC58BADF5787 /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		ABAE1C4B20EC4F883159E802A627C5F0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E43A3E4D3B892CD5C4C55E61379CE46 /* AHDataModel.modulemap */,
+				246186E1405C3A17C5CAF374DBA0CFDD /* AHDataModel.xcconfig */,
+				D7BA3275EA5755ACF795FB6E7A525518 /* AHDataModel-dummy.m */,
+				4495C99C4C0DF43963F14BDD01CC24C4 /* AHDataModel-prefix.pch */,
+				8048D9D99CE8E06FF9605DF65FA616DF /* AHDataModel-umbrella.h */,
+				73F0C68FFF92312470C6187B132F74F4 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AHDataModel";
+			sourceTree = "<group>";
+		};
+		ADB47218F076A4EA7770994602D5D79F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3F56C4424D2A43885D84FA6EAEFA059 /* AHFMModuleManager.modulemap */,
+				D2058A38169468C6C5B36F37686AAF3B /* AHFMModuleManager.xcconfig */,
+				7F22C68D223D0CC59FD740E1612E9992 /* AHFMModuleManager-dummy.m */,
+				5A0A83D5D06C31A339B3A5262F71EFD9 /* AHFMModuleManager-prefix.pch */,
+				56E9750F9A4A0F97A07FA9E5A603FC1E /* AHFMModuleManager-umbrella.h */,
+				DC944AF82165D87BFDC557ADDB589B0B /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AHFMModuleManager";
+			sourceTree = "<group>";
+		};
+		AE6A412BA2563C7374AECED10D5CB616 /* AHServiceRouter */ = {
+			isa = PBXGroup;
+			children = (
+				37F2EC8D464D54FE4ED3B58467FEDFFA /* AHServiceRouter.swift */,
+				55AF74F3C8FAF6FEF50ADB3D412D1442 /* Support Files */,
+			);
+			name = AHServiceRouter;
+			path = AHServiceRouter;
+			sourceTree = "<group>";
+		};
+		B4C7C90AC1BE342468108B30F5D615A0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				817F7C639FFFD486C5CF3CB93D3CB74B /* AHFMAudioPlayerVCManager.modulemap */,
+				C28696F5CA483216095C981EA32E7DFA /* AHFMAudioPlayerVCManager.xcconfig */,
+				902483E0E0B5EF47C65DD3828331C2D3 /* AHFMAudioPlayerVCManager-dummy.m */,
+				004122160F0C7DD08D4FEE56E32EA3A3 /* AHFMAudioPlayerVCManager-prefix.pch */,
+				709C8B820DB37D46A6AC98572AB4D3A9 /* AHFMAudioPlayerVCManager-umbrella.h */,
+				120D9FA7AFDFABA632C4D36004D7FC25 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/AHFMAudioPlayerVCManager";
+			sourceTree = "<group>";
+		};
+		BA5E3C6D176779A05DB563B080556FFB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C0E71D46C390C86ABA82EC148D49D82 /* Info.plist */,
+				979A2381840E5EDE0E92A95A055BFF58 /* UIDeviceExtension.modulemap */,
+				8C169D7A2B8E3E4DD944718D2301FFA0 /* UIDeviceExtension.xcconfig */,
+				B7084D49E7A9084C5534018FBD1FA05A /* UIDeviceExtension-dummy.m */,
+				73755C6B2725F3E4E973D9778B6843C5 /* UIDeviceExtension-prefix.pch */,
+				4C7804118000EE018AC69C859121A215 /* UIDeviceExtension-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UIDeviceExtension";
+			sourceTree = "<group>";
+		};
+		C03415FB6FCEFFF60F7547A3E71F3038 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				C821F5BAF2E7DFFD9AFF3ED4E475C630 /* SwiftyJSON.swift */,
+				AAE5906713570721A38FAE8EAE4E4402 /* Support Files */,
+			);
+			name = SwiftyJSON;
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		DC76DE69A4867993F05D23DE239E4B1F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F16977CC9D2AA9FEB22770AB07EE8B32 /* Info.plist */,
+				2CBBCDED6E4B4D6C98B480B2F789B514 /* KeychainAccess.modulemap */,
+				2A1F03B64F22F4C1560595F8A7D30840 /* KeychainAccess.xcconfig */,
+				F8BA37B5654414ABE671FA8FF3D75FA9 /* KeychainAccess-dummy.m */,
+				5EFE41ED4DD262751E0ACCE2E9786053 /* KeychainAccess-prefix.pch */,
+				99FD3E1D6CA04F41630AACAC11DDF6C4 /* KeychainAccess-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KeychainAccess";
+			sourceTree = "<group>";
+		};
+		DF3E67ADFD36C1891CCDB0A75C627B14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D247790742B033FF8873A49040609D39 /* AHDataModel.framework */,
+				14ABD65C409D19F1BA091F9F2461AE4F /* AHFMAudioPlayerVCServices.framework */,
+				30065464EE689CFA4C3FF785FF395785 /* AHFMDataCenter.framework */,
+				858FE4B24BCD645EBF0FF56CA416BC91 /* AHFMDataTransformers.framework */,
+				9F06E3B79870B2B86436AD21F8A926CC /* AHFMModuleManager.framework */,
+				DAEC748E0336D67BD815BB91596FD27E /* AHFMNetworking.framework */,
+				4377DA9D227490D020D08FE873CE79EF /* AHFMServices.framework */,
+				72CA2523F8AA9538FFF0101027516A0E /* AHServiceRouter.framework */,
+				717A3714665E55B45BB6F992204260FE /* Alamofire.framework */,
+				FE71540C9F4D93F31AB171EB03C7E6D8 /* KeychainAccess.framework */,
+				5551478DC97BB811E67D7967BFB1BB0E /* SwiftyJSON.framework */,
+				C7EE4AFEC0BA75EBCA27E32CF153C398 /* UIDeviceExtension.framework */,
+				2F27AE43A3AC56BED8A80AE2421FF577 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E22353B168AB896BB13306FEAAE5A5CE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8F76C02530BAA5253BE52E8D5D7FD16 /* Alamofire.modulemap */,
+				8FDEC495359C6F256004EB96A8960B78 /* Alamofire.xcconfig */,
+				75770AF5FB1296BE1D98A166AA13A3FC /* Alamofire-dummy.m */,
+				3A25AAE806588C9B13BFAC12ACCA5062 /* Alamofire-prefix.pch */,
+				09AC079B1F4193744EFDD07FFDB83855 /* Alamofire-umbrella.h */,
+				169EF62D6932CA999B4B93737E5F5E27 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		EBF0FF333CB83243785E7BE2D064B6F4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				74454C417F30754B13740993E0570B5A /* AHFMDataTransformers.modulemap */,
+				372541F756C09F83E4AE95879EE2202D /* AHFMDataTransformers.xcconfig */,
+				4E0E8716C47FEBB30B55C538B33054CD /* AHFMDataTransformers-dummy.m */,
+				A17E40B2056F1A733C4238FE85FC1DFC /* AHFMDataTransformers-prefix.pch */,
+				5E5E725BAFEAAFA94A9599BE89D35DD1 /* AHFMDataTransformers-umbrella.h */,
+				4B2AB8BFECC4DF76A20673AE8787204A /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AHFMDataTransformers";
+			sourceTree = "<group>";
+		};
+		EF0D6B09945399A2CFF69797F32EA80D /* AHDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				B196071C7B7CE5D97F09D915F94093C3 /* AHDatabase.swift */,
+				CC8D962C7536423715635353B1575066 /* AHDataModel.swift */,
+				AB87E2EAB0E1E171C7551F8778008022 /* AHDataModelQuery.swift */,
+				05D1599A77EA6EB10DEFCCBA57EDA96E /* AHDB.swift */,
+				6A7F685F3FADFE52B47C0F28D88C1C7E /* AHDBColumnInfo.swift */,
+				FC74925D0B198E41419EB6AB4606AC62 /* Migration.swift */,
+				28F1B4B2C39328D8D708673419AE5D06 /* Migrator.swift */,
+				6B9E35623AC1E5E433925DAA054F1884 /* module.modulemap */,
+				94605675739D30D7F5B4F0933AF6A589 /* module.modulemap */,
+				ABAE1C4B20EC4F883159E802A627C5F0 /* Support Files */,
+			);
+			name = AHDataModel;
+			path = AHDataModel;
+			sourceTree = "<group>";
+		};
+		F622933BE4D7318DAE3867BAC54C7726 /* AHFMDataCenter */ = {
+			isa = PBXGroup;
+			children = (
+				C35800FEC79B1C0D91DA2E016898057B /* AHFMDataCenter.swift */,
+				C70565726B4C9ED60828B499E52935FB /* AHFMEpisode.swift */,
+				B2468804EFD27BB649BCF5E0ED2FBBA4 /* AHFMEpisodeHistory.swift */,
+				B1BE179720555631043E45268138ACF2 /* AHFMEpisodeInfo.swift */,
+				59F93F1909E0741FBDEED8B710EA9C9F /* AHFMShow.swift */,
+				92B241992DA81A58BE07A106600F8D1B /* AHFMSubscribedShow.swift */,
+				360AF14894DFD8051F026EFCC3583B63 /* Support Files */,
+			);
+			name = AHFMDataCenter;
+			path = AHFMDataCenter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		08620C67D827F6386827BD1A0DFEC1C5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8FC390A674D827CBCDCFC00895B26A0 /* AHFMAudioPlayerVCManager-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1471D57427D560D578BBF7248F68038F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39C1CC180985B4B35D3CA160CD317548 /* AHFMModuleManager-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		379EA0042D950FB8E1BF8387E1F13DF4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9733CB4932C2DEBDBB574480D2A788F /* AHDataModel-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AB509BDA3790160356F136A800843E5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C2FD163B0EC48A90710D16D622A0718 /* AHFMServices-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D27272F690CDA33990788D79C003F5A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73255EB48E14FAEB95AC1A9E9FEF334F /* AHFMDataTransformers-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75897F159A52245A5DCE2E983578557B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F48E71735BD86B0E5FCA3116332F74AC /* AHFMDataCenter-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		797D979A7EDB09B931F20F560F8F5875 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				271D4320AF35D16FD15075A2F3FE4EE5 /* AHFMNetworking-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		857C24AE60C869DDDCC3BF032751130E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE9480EAC2A571F4022982FEACE96FAD /* AHServiceRouter-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		975A8542791CDF1AF25301CDE6FC9320 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B435162D2C5788FE4240A342DCF75693 /* Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB024DD49FD2620CB3A52798B8D647EB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B943EE76BB0618ECA363090A936158 /* Pods-AHFMAudioPlayerVCManager_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA3D8EB9AD2A0C1D4F63A60F693ACD6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD7C4F7285DEFE8478F38632B1BEAC07 /* Pods-AHFMAudioPlayerVCManager_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAF760DE34860A21FA3C21D60AD6BF91 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B8FE3907BD94F7F39A4C541D71934DA /* AHFMAudioPlayerVCServices-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E87AB36054095CABDFFFBD03D65489 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C13E582541B5E219EA55B8239A8C7AD /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F873FE59A60BFE81D8AC67FC5443177B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E19E32623034EF0222187B37A7BDFD11 /* UIDeviceExtension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEA6A8E9A8637AE3F560DF7309085E15 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E49ADDDB2FFC8AA45EB729085E46587 /* KeychainAccess-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		001307F593B684F88A2AA0964E7B41C9 /* UIDeviceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1172D66832531B0FFABDD50E90A90AE7 /* Build configuration list for PBXNativeTarget "UIDeviceExtension" */;
+			buildPhases = (
+				2D419B247CD12389CF29211851069797 /* Sources */,
+				4DF39498EF37B273BF25ECCE7A88B0E4 /* Frameworks */,
+				F873FE59A60BFE81D8AC67FC5443177B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIDeviceExtension;
+			productName = UIDeviceExtension;
+			productReference = DC46D497F44643F48D54F10023BF7837 /* UIDeviceExtension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		03FA013A9BAB805CB7452F9FAB189230 /* AHServiceRouter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF283CD9F257A8A4D2264A97493B9D03 /* Build configuration list for PBXNativeTarget "AHServiceRouter" */;
+			buildPhases = (
+				A7F282136D4B4E69A221403C3D204258 /* Sources */,
+				73D0497C93FA07A0CDF495ED7FBC794D /* Frameworks */,
+				857C24AE60C869DDDCC3BF032751130E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AHServiceRouter;
+			productName = AHServiceRouter;
+			productReference = 292582FFB9ADAE2A78D1C1BAC3B66AB6 /* AHServiceRouter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		20E51B0066364433EDE56F0C749FA05C /* AHFMAudioPlayerVCServices */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F80660C9DE2F911D2C0C2607EF4E0998 /* Build configuration list for PBXNativeTarget "AHFMAudioPlayerVCServices" */;
+			buildPhases = (
+				10BD1C8CF82027C66BFEEE46D8F19290 /* Sources */,
+				F3CD120F8421A5070E00F994BD409508 /* Frameworks */,
+				EAF760DE34860A21FA3C21D60AD6BF91 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50E69615978B3D32CAF4C58A5E3CCCE8 /* PBXTargetDependency */,
+			);
+			name = AHFMAudioPlayerVCServices;
+			productName = AHFMAudioPlayerVCServices;
+			productReference = 29FC386E3E170D550D4A446E390DF786 /* AHFMAudioPlayerVCServices.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2D0744FA0F99F2CB757431FBC2DF1170 /* AHFMModuleManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54EA5B451529E2FF80D3EAF5EA40EFA3 /* Build configuration list for PBXNativeTarget "AHFMModuleManager" */;
+			buildPhases = (
+				2906E3EF156223324145379D99E86E57 /* Sources */,
+				986424D6FE600AE995D45F0387F63F1E /* Frameworks */,
+				1471D57427D560D578BBF7248F68038F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AHFMModuleManager;
+			productName = AHFMModuleManager;
+			productReference = 605BF00D99784733D362FEB5017E0786 /* AHFMModuleManager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		37F13E7194F463F9D017551F95E73FF2 /* AHFMNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FB289D00A655F8A37F7235D66B7873C /* Build configuration list for PBXNativeTarget "AHFMNetworking" */;
+			buildPhases = (
+				9A13B6EFA5EE3B486FEC4744C384B1C5 /* Sources */,
+				BC0C56FCF01B098881030BA6240020D3 /* Frameworks */,
+				797D979A7EDB09B931F20F560F8F5875 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A12A770FD686230A1FAD3673201A238 /* PBXTargetDependency */,
+				CE69D845E15E764A162057884858CD17 /* PBXTargetDependency */,
+				818088C4EAE69925D54B190E940DF150 /* PBXTargetDependency */,
+			);
+			name = AHFMNetworking;
+			productName = AHFMNetworking;
+			productReference = 1672678E3BF654346693A10EB3DC6A79 /* AHFMNetworking.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		619327CF72ADE5110C192DE31A59CD2F /* Pods-AHFMAudioPlayerVCManager_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A90B298E5BE14B57527A864726DCA77D /* Build configuration list for PBXNativeTarget "Pods-AHFMAudioPlayerVCManager_Example" */;
+			buildPhases = (
+				D5AC1508C2EA8DD25A8F28F10F6734BE /* Sources */,
+				8E435011B77451DCE04DCE7CE0A23D09 /* Frameworks */,
+				AB024DD49FD2620CB3A52798B8D647EB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B16F4F8CDD4C5D18A46241A58EA5AA2 /* PBXTargetDependency */,
+				3D1D763D8523E5D3AE13F9CC99B0EF55 /* PBXTargetDependency */,
+				997BA72C69E96E4BFF36A979F4BF5DA0 /* PBXTargetDependency */,
+				2AAE44378890F6DE0E89494FD7BA5BDA /* PBXTargetDependency */,
+				304E85930BD2CB1288F917AAC4C513C3 /* PBXTargetDependency */,
+				27FE100C869FCE8ADCB2B7420321F595 /* PBXTargetDependency */,
+				2C9EC968D62338C51AF3DB9CBCCC6152 /* PBXTargetDependency */,
+				AFA151981A8A78D007276694E98D2317 /* PBXTargetDependency */,
+				B10D4F0747DA19EE9ED6F8B8F4ACFC9E /* PBXTargetDependency */,
+				D06E6E285861349DD22F15AAABDFB6F4 /* PBXTargetDependency */,
+				291B14ABCBF3E8053308C282BF993FF9 /* PBXTargetDependency */,
+				DFB67E2432DFF4E74602E34D751561BA /* PBXTargetDependency */,
+				52C72C1AF6B714263A69A57592ADE9F1 /* PBXTargetDependency */,
+			);
+			name = "Pods-AHFMAudioPlayerVCManager_Example";
+			productName = "Pods-AHFMAudioPlayerVCManager_Example";
+			productReference = 26216483CD46DFF2BAE18BA84A09FE96 /* Pods_AHFMAudioPlayerVCManager_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6447BA5C324920365AD12084BE3B94C0 /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7799E1154BB9E39F805109B6915D534F /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				20E73985F41E90670BBA76E353FFEE43 /* Sources */,
+				F1E2AC4491609CD0704FD6963008AD6A /* Frameworks */,
+				975A8542791CDF1AF25301CDE6FC9320 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 1BFC1A6E2EED40AAEEF650E286165FB0 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		742ADD1F14F10B4F93D73D41101055F8 /* Pods-AHFMAudioPlayerVCManager_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C594FD21B03713A978E3E27DAF1AC516 /* Build configuration list for PBXNativeTarget "Pods-AHFMAudioPlayerVCManager_Tests" */;
+			buildPhases = (
+				2DC71B2C34706DC2EFB919A6530651ED /* Sources */,
+				E7DDD12B8772E064EE7F00A54CB56725 /* Frameworks */,
+				ADA3D8EB9AD2A0C1D4F63A60F693ACD6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-AHFMAudioPlayerVCManager_Tests";
+			productName = "Pods-AHFMAudioPlayerVCManager_Tests";
+			productReference = 8C65243DBD7E939838BD25D6E2F2DD69 /* Pods_AHFMAudioPlayerVCManager_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		87748AA572C7B415943A215892E52BA1 /* AHFMDataTransformers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 970925EFFCE5E1383297248FEEC8E684 /* Build configuration list for PBXNativeTarget "AHFMDataTransformers" */;
+			buildPhases = (
+				2E0398AC1324BDD7ECE0957A0940291E /* Sources */,
+				A8AA1B039F5749D91282FE199B8F6797 /* Frameworks */,
+				4D27272F690CDA33990788D79C003F5A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				609844AC1BD7CD819F15B0A1E35715E3 /* PBXTargetDependency */,
+			);
+			name = AHFMDataTransformers;
+			productName = AHFMDataTransformers;
+			productReference = 79BB7D2A42A3DEFE35A16335CE92B8BE /* AHFMDataTransformers.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AD600E37EFF1E29E61F9B782A7561F69 /* AHFMAudioPlayerVCManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A45BFB8921528BDF2278FEC5161B1C12 /* Build configuration list for PBXNativeTarget "AHFMAudioPlayerVCManager" */;
+			buildPhases = (
+				29D186D7D34A1FA53887968598A7614E /* Sources */,
+				EFA6571D12C8E22472923CCB6F0C5563 /* Frameworks */,
+				08620C67D827F6386827BD1A0DFEC1C5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				922DFA7747EA00B3087FDA65D3209C4E /* PBXTargetDependency */,
+				89965536E671A25DF5307C1AF2090F74 /* PBXTargetDependency */,
+				A1518126AF62FB4FD1A2C47C967C25F7 /* PBXTargetDependency */,
+				37D37B421F357C42645AE67C942C8C0B /* PBXTargetDependency */,
+				91B71DCB1508FCB1DD6E90293B2182F9 /* PBXTargetDependency */,
+				96F1937A97ADC860835533B9E80DFC75 /* PBXTargetDependency */,
+				6700DE2EB81CB8CEC1DCFEFACF49FB63 /* PBXTargetDependency */,
+				FDE59F9F60F34DC65132107CA18D7DD8 /* PBXTargetDependency */,
+				2D0C18C7B7882063DD0F8259B207D879 /* PBXTargetDependency */,
+				8297D641D24592AE1F512DAA0983EFF8 /* PBXTargetDependency */,
+				2A7C981124C78B88CE0A1F5FB19AD68E /* PBXTargetDependency */,
+				F7B04A15C6BC8940B475378D6D293A87 /* PBXTargetDependency */,
+			);
+			name = AHFMAudioPlayerVCManager;
+			productName = AHFMAudioPlayerVCManager;
+			productReference = 4CF410BFDF499DAD3E71E1F987FF421A /* AHFMAudioPlayerVCManager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B9914BB4B67CC8BD4959202620D0EC9D /* AHFMDataCenter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46913BA26F8249878BDD967650356FD2 /* Build configuration list for PBXNativeTarget "AHFMDataCenter" */;
+			buildPhases = (
+				38292982A4AF7F32459DF265CFE2CBDC /* Sources */,
+				982C14D078BB4BDC845D7A140C1DCB0C /* Frameworks */,
+				75897F159A52245A5DCE2E983578557B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1EB6849AB0180BD5C31AB6ABDE0D48F /* PBXTargetDependency */,
+				CCDE055F6C2D768D14102891B61DC17D /* PBXTargetDependency */,
+			);
+			name = AHFMDataCenter;
+			productName = AHFMDataCenter;
+			productReference = 34B6EF822AD7F40AD780EB9535638AD6 /* AHFMDataCenter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DC0C0580F94A4CBE8A20D7612732C564 /* KeychainAccess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA980DF40F0A14B20FEFA84151F5154D /* Build configuration list for PBXNativeTarget "KeychainAccess" */;
+			buildPhases = (
+				A4512E7ECF100636359AD548E13CFE3C /* Sources */,
+				C55A0F56681A4AA4B0B693E6AAE36065 /* Frameworks */,
+				FEA6A8E9A8637AE3F560DF7309085E15 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeychainAccess;
+			productName = KeychainAccess;
+			productReference = EC575D3C8FCD911F8B6D274092ABA43A /* KeychainAccess.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DC6668F6A51A6E23A4FBA9DB71DCE709 /* AHFMServices */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4B9F1C8E3A3E75F3829A3CE9612CA96 /* Build configuration list for PBXNativeTarget "AHFMServices" */;
+			buildPhases = (
+				22E468D1E2C394CDDD9307B76627EEB5 /* Sources */,
+				A7E8A16B7EE86A2A118FB9977EBB6D37 /* Frameworks */,
+				3AB509BDA3790160356F136A800843E5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AHFMServices;
+			productName = AHFMServices;
+			productReference = A0157AFD3A08DE1D6862902E3F426713 /* AHFMServices.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E1F6066DAC0E9293305836FE01990C48 /* AHDataModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27DA7C448D99685067A780D055CA8EB9 /* Build configuration list for PBXNativeTarget "AHDataModel" */;
+			buildPhases = (
+				166C7678EA0C6A4C739E9F090ACCC4B4 /* Sources */,
+				61177F725E811FEB74A2EC4719DD716D /* Frameworks */,
+				379EA0042D950FB8E1BF8387E1F13DF4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AHDataModel;
+			productName = AHDataModel;
+			productReference = 62BF859D39485A81BCFB54C34559A7C1 /* AHDataModel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F052D4129FF1BA68F76837862CB12FEA /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C467AD9B093C7D78772592ECA32C3ACE /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				05FEB57616A22DE3ED18BFA09A6C725F /* Sources */,
+				FC26ED50CC18FC322AC06BF561955549 /* Frameworks */,
+				F7E87AB36054095CABDFFFBD03D65489 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = D0772A4CDCB1634F5D7EC09FFED40B31 /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 9D38E252D13256044516B226892588DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1F6066DAC0E9293305836FE01990C48 /* AHDataModel */,
+				AD600E37EFF1E29E61F9B782A7561F69 /* AHFMAudioPlayerVCManager */,
+				20E51B0066364433EDE56F0C749FA05C /* AHFMAudioPlayerVCServices */,
+				B9914BB4B67CC8BD4959202620D0EC9D /* AHFMDataCenter */,
+				87748AA572C7B415943A215892E52BA1 /* AHFMDataTransformers */,
+				2D0744FA0F99F2CB757431FBC2DF1170 /* AHFMModuleManager */,
+				37F13E7194F463F9D017551F95E73FF2 /* AHFMNetworking */,
+				DC6668F6A51A6E23A4FBA9DB71DCE709 /* AHFMServices */,
+				03FA013A9BAB805CB7452F9FAB189230 /* AHServiceRouter */,
+				6447BA5C324920365AD12084BE3B94C0 /* Alamofire */,
+				DC0C0580F94A4CBE8A20D7612732C564 /* KeychainAccess */,
+				619327CF72ADE5110C192DE31A59CD2F /* Pods-AHFMAudioPlayerVCManager_Example */,
+				742ADD1F14F10B4F93D73D41101055F8 /* Pods-AHFMAudioPlayerVCManager_Tests */,
+				F052D4129FF1BA68F76837862CB12FEA /* SwiftyJSON */,
+				001307F593B684F88A2AA0964E7B41C9 /* UIDeviceExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05FEB57616A22DE3ED18BFA09A6C725F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B764FB2C4601D7D9C0B955620B888B0 /* SwiftyJSON-dummy.m in Sources */,
+				18642004F27FF88F231EAC95032DE33D /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10BD1C8CF82027C66BFEEE46D8F19290 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE3C4EDDBE87E905CAEB2345A3F91547 /* AHFMAudioPlayerVCServices-dummy.m in Sources */,
+				351139B00D39DE0C48D2A6289CEE7163 /* AHFMAudioPlayerVCServices.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		166C7678EA0C6A4C739E9F090ACCC4B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F612198032CD3AF00198F98B33BE91 /* AHDatabase.swift in Sources */,
+				8B387AE80B7CE5528B5EA8530B7E9173 /* AHDataModel-dummy.m in Sources */,
+				903EFCA68B1500F2472DD967E8683E62 /* AHDataModel.swift in Sources */,
+				31C942E2ACFD80D63AEB99EF45C3DA50 /* AHDataModelQuery.swift in Sources */,
+				62EB447CD35174F326FB00E3A90732F5 /* AHDB.swift in Sources */,
+				FBEB93C14BEB82C970FCCA3D63F295A4 /* AHDBColumnInfo.swift in Sources */,
+				44A22D271AD37088556B5285ED52A89B /* Migration.swift in Sources */,
+				CD3C1E69BEDB9C08B2596DE536F0B335 /* Migrator.swift in Sources */,
+				D6D7C7C19366E1763F31CCB5A0ED4925 /* module.modulemap in Sources */,
+				816B89B457C4E75B04210A37DA4F3AE6 /* module.modulemap in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20E73985F41E90670BBA76E353FFEE43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04239B3012CF53C30A7267441735B2AF /* AFError.swift in Sources */,
+				BFE3E8B4E6AF5B3FF7CB52B408674436 /* Alamofire-dummy.m in Sources */,
+				BB401CFB22A0B487055178C4181B650A /* Alamofire.swift in Sources */,
+				4E3E0BCFDF987157CA15544A5279749B /* DispatchQueue+Alamofire.swift in Sources */,
+				59931E757DEE20CF56773E23A5882495 /* MultipartFormData.swift in Sources */,
+				D56183FB73DDB174D4C563BEB38CFE56 /* NetworkReachabilityManager.swift in Sources */,
+				F8E3EF67AA5B7CE182C6892E35A64209 /* Notifications.swift in Sources */,
+				27BE82FD1978913496865425946D85EE /* ParameterEncoding.swift in Sources */,
+				CE2656D3D1583100FB5857D997A64EF4 /* Request.swift in Sources */,
+				51B26F42C29C4C65BEB3F32D16F4CAE4 /* Response.swift in Sources */,
+				098B2096AAC6FA639B883DBC36551DDB /* ResponseSerialization.swift in Sources */,
+				38DA9C85542F215ABAEF1E94D21D5224 /* Result.swift in Sources */,
+				57A558693F58B9C0D092E8093EB67877 /* ServerTrustPolicy.swift in Sources */,
+				AF7C6504DFCF66CB9B983D46DDE6B3E5 /* SessionDelegate.swift in Sources */,
+				904CA443D7C708E55ACC1140F48D2950 /* SessionManager.swift in Sources */,
+				2CB4F05F73F8615AE98138DE74C19763 /* TaskDelegate.swift in Sources */,
+				2CFFF4A402A47E729F6CF639235FB611 /* Timeline.swift in Sources */,
+				B72FB9092EEA7FAD4F0522A4BCE067BA /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22E468D1E2C394CDDD9307B76627EEB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DECAE50CD9AA2060ADDFA5FC06612C29 /* AHFMServices-dummy.m in Sources */,
+				CFC0839DB72E65F3C6121D106C886C67 /* AHFMServices.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2906E3EF156223324145379D99E86E57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				209C1E4B757C3E67997D00F4385A4FE9 /* AHFMModuleManager-dummy.m in Sources */,
+				AA3749C8223D4F109A1B1EE015E5A9C5 /* AHFMModuleManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29D186D7D34A1FA53887968598A7614E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07FB6BA1EFD380AD847803DF13A952A0 /* AHFMAudioPlayerManager.swift in Sources */,
+				10DDD43E1258D46CF57CF0967B7A4A9C /* AHFMAudioPlayerVCManager-dummy.m in Sources */,
+				D43D237D13AE436FAF2EF8F2C21F4CF5 /* AHFMManagerHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D419B247CD12389CF29211851069797 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29C61C27ABEC66F7C1E19E0C0433584E /* UIDevice+Extension.swift in Sources */,
+				5D13EA885C471530E78222D4B7C50027 /* UIDeviceExtension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DC71B2C34706DC2EFB919A6530651ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B24F2C009E377382EA7D673F8E21AD23 /* Pods-AHFMAudioPlayerVCManager_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E0398AC1324BDD7ECE0957A0940291E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43AA9C6F2C90611FABC79B5D7E03353B /* AHFMDataTransformers-dummy.m in Sources */,
+				0E323FAA8AA1E20021F50B98E228C8BB /* AHFMEpisodeTransform.swift in Sources */,
+				CA7CB41D0C9F4942DCBF9C2344D155A8 /* AHFMShowTransform.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38292982A4AF7F32459DF265CFE2CBDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26B9CBB439D2D20011385473BB47FC17 /* AHFMDataCenter-dummy.m in Sources */,
+				3668E6DC216E802D54AABD35C6BE3DB8 /* AHFMDataCenter.swift in Sources */,
+				6E6F721AF7F3EE96CEEAAD5D52659C16 /* AHFMEpisode.swift in Sources */,
+				91C88120981E7A2988B112C828896F02 /* AHFMEpisodeHistory.swift in Sources */,
+				649B4BBF8F0EC5CE279F408C9494DC5D /* AHFMEpisodeInfo.swift in Sources */,
+				64693D6E6FDD398771762DAC0AFEF6C0 /* AHFMShow.swift in Sources */,
+				4F38A0AD30000B14F5F32DAADF18A727 /* AHFMSubscribedShow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A13B6EFA5EE3B486FEC4744C384B1C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64D0D857F61599D427F4789530AE41E9 /* AHFMNetworking-dummy.m in Sources */,
+				AA6C7468D3D8E0D118C69F191CF22B48 /* AHFMNetworking.swift in Sources */,
+				03DCAF19199BEC7662494FF4FEB468C3 /* AHKeychain.swift in Sources */,
+				B26F4B89B7837D6EE5AD2DD63DD7540E /* AHNetworkConstants.swift in Sources */,
+				25BAE52D0308110CC7EE99B88C0FD6A4 /* OAuth2Handler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4512E7ECF100636359AD548E13CFE3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7873527F0F3D3EC67F5C07167ECB664 /* Keychain.swift in Sources */,
+				BBCC4C69E7449F5B16071C38718ABED4 /* KeychainAccess-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7F282136D4B4E69A221403C3D204258 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77171DEB87C0EBC29773B293587A0104 /* AHServiceRouter-dummy.m in Sources */,
+				4F6163442752EEAE4BA97E8EFAA85308 /* AHServiceRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5AC1508C2EA8DD25A8F28F10F6734BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95222828A214551D3A14E8233217D6AA /* Pods-AHFMAudioPlayerVCManager_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27FE100C869FCE8ADCB2B7420321F595 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHFMModuleManager;
+			target = 2D0744FA0F99F2CB757431FBC2DF1170 /* AHFMModuleManager */;
+			targetProxy = 333987376F35BC165F1A738AF7DD8CF4 /* PBXContainerItemProxy */;
+		};
+		291B14ABCBF3E8053308C282BF993FF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeychainAccess;
+			target = DC0C0580F94A4CBE8A20D7612732C564 /* KeychainAccess */;
+			targetProxy = D760AA0921542FD098ACC90296CB556E /* PBXContainerItemProxy */;
+		};
+		2A7C981124C78B88CE0A1F5FB19AD68E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = F052D4129FF1BA68F76837862CB12FEA /* SwiftyJSON */;
+			targetProxy = 596B4979344A634DB42DF36DDC545DBF /* PBXContainerItemProxy */;
+		};
+		2AAE44378890F6DE0E89494FD7BA5BDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHFMDataCenter;
+			target = B9914BB4B67CC8BD4959202620D0EC9D /* AHFMDataCenter */;
+			targetProxy = 8F1250A0FD4CC930AB2C09ED4EB06745 /* PBXContainerItemProxy */;
+		};
+		2C9EC968D62338C51AF3DB9CBCCC6152 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHFMNetworking;
+			target = 37F13E7194F463F9D017551F95E73FF2 /* AHFMNetworking */;
+			targetProxy = D8E603A90746900A0EACE296A5F65966 /* PBXContainerItemProxy */;
+		};
+		2D0C18C7B7882063DD0F8259B207D879 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 6447BA5C324920365AD12084BE3B94C0 /* Alamofire */;
+			targetProxy = 2708B31AF8541931358C6CCF665E7973 /* PBXContainerItemProxy */;
+		};
+		304E85930BD2CB1288F917AAC4C513C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHFMDataTransformers;
+			target = 87748AA572C7B415943A215892E52BA1 /* AHFMDataTransformers */;
+			targetProxy = 4A5068E8B7F57DF2C9C6FFD50F885327 /* PBXContainerItemProxy */;
+		};
+		37D37B421F357C42645AE67C942C8C0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHFMDataTransformers;
+			target = 87748AA572C7B415943A215892E52BA1 /* AHFMDataTransformers */;
+			targetProxy = 73C332E5E54A10069F39F1B0686487BC /* PBXContainerItemProxy */;
+		};
+		3D1D763D8523E5D3AE13F9CC99B0EF55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHFMAudioPlayerVCManager;
+			target = AD600E37EFF1E29E61F9B782A7561F69 /* AHFMAudioPlayerVCManager */;
+			targetProxy = EDF853E368D2CD1876A36A9F0001A520 /* PBXContainerItemProxy */;
+		};
+		4A12A770FD686230A1FAD3673201A238 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 6447BA5C324920365AD12084BE3B94C0 /* Alamofire */;
+			targetProxy = D3D6F384C477B827DA5E2E8A68A4DC40 /* PBXContainerItemProxy */;
+		};
+		50E69615978B3D32CAF4C58A5E3CCCE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHFMServices;
+			target = DC6668F6A51A6E23A4FBA9DB71DCE709 /* AHFMServices */;
+			targetProxy = E3E45DD47DB8BF23829E5BB2B5ABA337 /* PBXContainerItemProxy */;
+		};
+		52C72C1AF6B714263A69A57592ADE9F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIDeviceExtension;
+			target = 001307F593B684F88A2AA0964E7B41C9 /* UIDeviceExtension */;
+			targetProxy = 3A3F5A2FF0A24E83EDA1EA53B02F9F96 /* PBXContainerItemProxy */;
+		};
+		609844AC1BD7CD819F15B0A1E35715E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = F052D4129FF1BA68F76837862CB12FEA /* SwiftyJSON */;
+			targetProxy = E60EC99A9CDBD7F31FA78A22DA9BBB28 /* PBXContainerItemProxy */;
+		};
+		6700DE2EB81CB8CEC1DCFEFACF49FB63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHFMServices;
+			target = DC6668F6A51A6E23A4FBA9DB71DCE709 /* AHFMServices */;
+			targetProxy = 6A6FECACB4154AB33B7771356B615FBE /* PBXContainerItemProxy */;
+		};
+		818088C4EAE69925D54B190E940DF150 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = F052D4129FF1BA68F76837862CB12FEA /* SwiftyJSON */;
+			targetProxy = 678153BDC020B37819C3E03FACAE98A7 /* PBXContainerItemProxy */;
+		};
+		8297D641D24592AE1F512DAA0983EFF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeychainAccess;
+			target = DC0C0580F94A4CBE8A20D7612732C564 /* KeychainAccess */;
+			targetProxy = 5AB12A76A22B8B4E2F5223FEED405968 /* PBXContainerItemProxy */;
+		};
+		89965536E671A25DF5307C1AF2090F74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHFMAudioPlayerVCServices;
+			target = 20E51B0066364433EDE56F0C749FA05C /* AHFMAudioPlayerVCServices */;
+			targetProxy = 3BB1B9655C0F85F22DD8387CA817F38F /* PBXContainerItemProxy */;
+		};
+		8B16F4F8CDD4C5D18A46241A58EA5AA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHDataModel;
+			target = E1F6066DAC0E9293305836FE01990C48 /* AHDataModel */;
+			targetProxy = 213C009EC1E4E83CA018235D4D1AFB13 /* PBXContainerItemProxy */;
+		};
+		91B71DCB1508FCB1DD6E90293B2182F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHFMModuleManager;
+			target = 2D0744FA0F99F2CB757431FBC2DF1170 /* AHFMModuleManager */;
+			targetProxy = 9CF361DDB2C1F511474196F5C3C53BF6 /* PBXContainerItemProxy */;
+		};
+		922DFA7747EA00B3087FDA65D3209C4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHDataModel;
+			target = E1F6066DAC0E9293305836FE01990C48 /* AHDataModel */;
+			targetProxy = 5B12A1E889E1C83926A0295161A05407 /* PBXContainerItemProxy */;
+		};
+		96F1937A97ADC860835533B9E80DFC75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHFMNetworking;
+			target = 37F13E7194F463F9D017551F95E73FF2 /* AHFMNetworking */;
+			targetProxy = 2824ABACB990CD4FF44D1DEDBC6EF5C2 /* PBXContainerItemProxy */;
+		};
+		997BA72C69E96E4BFF36A979F4BF5DA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHFMAudioPlayerVCServices;
+			target = 20E51B0066364433EDE56F0C749FA05C /* AHFMAudioPlayerVCServices */;
+			targetProxy = 360DDB592E873C348F32F07CA75CC69B /* PBXContainerItemProxy */;
+		};
+		A1518126AF62FB4FD1A2C47C967C25F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHFMDataCenter;
+			target = B9914BB4B67CC8BD4959202620D0EC9D /* AHFMDataCenter */;
+			targetProxy = DBBB239F2CCFE8D1CB488340A6BCDFB4 /* PBXContainerItemProxy */;
+		};
+		AFA151981A8A78D007276694E98D2317 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHFMServices;
+			target = DC6668F6A51A6E23A4FBA9DB71DCE709 /* AHFMServices */;
+			targetProxy = 2704D3E27EA4505DEECE114E45AF80B6 /* PBXContainerItemProxy */;
+		};
+		B10D4F0747DA19EE9ED6F8B8F4ACFC9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHServiceRouter;
+			target = 03FA013A9BAB805CB7452F9FAB189230 /* AHServiceRouter */;
+			targetProxy = 1A7FB3A54C3A195739920C50FF0A35FB /* PBXContainerItemProxy */;
+		};
+		B1EB6849AB0180BD5C31AB6ABDE0D48F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHDataModel;
+			target = E1F6066DAC0E9293305836FE01990C48 /* AHDataModel */;
+			targetProxy = 7BE33B039A2A7E8828569874AD499B33 /* PBXContainerItemProxy */;
+		};
+		CCDE055F6C2D768D14102891B61DC17D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIDeviceExtension;
+			target = 001307F593B684F88A2AA0964E7B41C9 /* UIDeviceExtension */;
+			targetProxy = A16A4C4A0A05B1EAC0170EBDB52AF907 /* PBXContainerItemProxy */;
+		};
+		CE69D845E15E764A162057884858CD17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeychainAccess;
+			target = DC0C0580F94A4CBE8A20D7612732C564 /* KeychainAccess */;
+			targetProxy = 880D5707E2CBF89F96F5C570953C69A0 /* PBXContainerItemProxy */;
+		};
+		D06E6E285861349DD22F15AAABDFB6F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 6447BA5C324920365AD12084BE3B94C0 /* Alamofire */;
+			targetProxy = 31782C8218ADD28CADE6CFE3502FE785 /* PBXContainerItemProxy */;
+		};
+		DFB67E2432DFF4E74602E34D751561BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = F052D4129FF1BA68F76837862CB12FEA /* SwiftyJSON */;
+			targetProxy = 876826467347FB7714F15A345711368C /* PBXContainerItemProxy */;
+		};
+		F7B04A15C6BC8940B475378D6D293A87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIDeviceExtension;
+			target = 001307F593B684F88A2AA0964E7B41C9 /* UIDeviceExtension */;
+			targetProxy = 7D29B1B47AC56D1D3DEAEFBCD358796E /* PBXContainerItemProxy */;
+		};
+		FDE59F9F60F34DC65132107CA18D7DD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHServiceRouter;
+			target = 03FA013A9BAB805CB7452F9FAB189230 /* AHServiceRouter */;
+			targetProxy = 3DF4C3F7476C102B329C3C8DEEA1E8D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00126DDC0E341C7598C9A036F2AE2800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A1F03B64F22F4C1560595F8A7D30840 /* KeychainAccess.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KeychainAccess/KeychainAccess-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KeychainAccess/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KeychainAccess/KeychainAccess.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = KeychainAccess;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0A12A301389BD413A75C5F6BE79199C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C28696F5CA483216095C981EA32E7DFA /* AHFMAudioPlayerVCManager.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AHFMAudioPlayerVCManager/AHFMAudioPlayerVCManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHFMAudioPlayerVCManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHFMAudioPlayerVCManager/AHFMAudioPlayerVCManager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AHFMAudioPlayerVCManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		100CEC701942FEB737BC104136E97E03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF2C5DC6663BE33D4E264ACBAF07E304 /* AHFMServices.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AHFMServices/AHFMServices-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHFMServices/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHFMServices/AHFMServices.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AHFMServices;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		133DD389BF7C9D39D0C30682F9ECCCE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61A1C0A5CED1C19DB87A3AF9EC390E6C /* AHServiceRouter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AHServiceRouter/AHServiceRouter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHServiceRouter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHServiceRouter/AHServiceRouter.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AHServiceRouter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		164EDF687B36BA4CC7EDE9C5DFFF8CA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 422A1C7ABB9A6E0AD90D6920982723DB /* AHFMAudioPlayerVCServices.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AHFMAudioPlayerVCServices/AHFMAudioPlayerVCServices-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHFMAudioPlayerVCServices/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHFMAudioPlayerVCServices/AHFMAudioPlayerVCServices.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AHFMAudioPlayerVCServices;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3BE7F64B9F4063B17740BDD37FC7E304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6B4DC63AFB3B8BDF7A716EE45AF7F20 /* AHFMNetworking.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AHFMNetworking/AHFMNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHFMNetworking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHFMNetworking/AHFMNetworking.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AHFMNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4E6043D30DB9B4F910526B27DBB5C24E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A1A602225A6A740AE37168C703E001E /* Pods-AHFMAudioPlayerVCManager_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AHFMAudioPlayerVCManager_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AHFMAudioPlayerVCManager_Tests/Pods-AHFMAudioPlayerVCManager_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AHFMAudioPlayerVCManager_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		53D3673B17ADA847962C65E0FEFD835F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6B4DC63AFB3B8BDF7A716EE45AF7F20 /* AHFMNetworking.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AHFMNetworking/AHFMNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHFMNetworking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHFMNetworking/AHFMNetworking.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AHFMNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		65887C58B92C5DA5C268900B547D64AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A1F03B64F22F4C1560595F8A7D30840 /* KeychainAccess.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KeychainAccess/KeychainAccess-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KeychainAccess/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KeychainAccess/KeychainAccess.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = KeychainAccess;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6C6998602419793377637DFABA3F74F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 422A1C7ABB9A6E0AD90D6920982723DB /* AHFMAudioPlayerVCServices.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AHFMAudioPlayerVCServices/AHFMAudioPlayerVCServices-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHFMAudioPlayerVCServices/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHFMAudioPlayerVCServices/AHFMAudioPlayerVCServices.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AHFMAudioPlayerVCServices;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		717E77604BFBB04BEAF56608A1CB2EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7754606ACE0E0716DF49A0103C208D8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F20126E086271532CA9B5ABCC885D309 /* AHFMDataCenter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AHFMDataCenter/AHFMDataCenter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHFMDataCenter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHFMDataCenter/AHFMDataCenter.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AHFMDataCenter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		78320120034A444AD81A3A66ADAED94D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FDEC495359C6F256004EB96A8960B78 /* Alamofire.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		80E040237E6824833E0249715F17A529 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F20126E086271532CA9B5ABCC885D309 /* AHFMDataCenter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AHFMDataCenter/AHFMDataCenter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHFMDataCenter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHFMDataCenter/AHFMDataCenter.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AHFMDataCenter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8F4B6D9B8FA234B1342E4F155BF8D4C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 246186E1405C3A17C5CAF374DBA0CFDD /* AHDataModel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AHDataModel/AHDataModel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHDataModel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHDataModel/AHDataModel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AHDataModel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A2B9B934942D26AC97614B0F59091E2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AEC3C89D19CC08AE5B9E27E62A8EF76 /* Pods-AHFMAudioPlayerVCManager_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AHFMAudioPlayerVCManager_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AHFMAudioPlayerVCManager_Example/Pods-AHFMAudioPlayerVCManager_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AHFMAudioPlayerVCManager_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A6A03C9B1314C05BD3C2FBD3F65EDF83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AF52D4545963288A26559FFBD94C0A3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 372541F756C09F83E4AE95879EE2202D /* AHFMDataTransformers.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AHFMDataTransformers/AHFMDataTransformers-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHFMDataTransformers/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHFMDataTransformers/AHFMDataTransformers.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AHFMDataTransformers;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B2358B6401BD58BEDAE4272344792656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2058A38169468C6C5B36F37686AAF3B /* AHFMModuleManager.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AHFMModuleManager/AHFMModuleManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHFMModuleManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHFMModuleManager/AHFMModuleManager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AHFMModuleManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B31D5AF4C913F1DF54D30628CE9EB678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FDEC495359C6F256004EB96A8960B78 /* Alamofire.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B32E869CDEE31BDCE7DD43A907A16D16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FB75CCA6ECFA6A2D0835462F7A5B666 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BC6197E2E97A9134B6606D14E6F48F2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 372541F756C09F83E4AE95879EE2202D /* AHFMDataTransformers.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AHFMDataTransformers/AHFMDataTransformers-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHFMDataTransformers/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHFMDataTransformers/AHFMDataTransformers.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AHFMDataTransformers;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BC7D8B465E509CCB54002B3738EF2532 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C169D7A2B8E3E4DD944718D2301FFA0 /* UIDeviceExtension.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIDeviceExtension/UIDeviceExtension-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIDeviceExtension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIDeviceExtension/UIDeviceExtension.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = UIDeviceExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CC254A96E0D88F0B38EEA0B6E493B01F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FB663794097DF782E76DF064B858084 /* Pods-AHFMAudioPlayerVCManager_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AHFMAudioPlayerVCManager_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AHFMAudioPlayerVCManager_Example/Pods-AHFMAudioPlayerVCManager_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AHFMAudioPlayerVCManager_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CC597D1DF380CDBCA1AD849FA21A0168 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 246186E1405C3A17C5CAF374DBA0CFDD /* AHDataModel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AHDataModel/AHDataModel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHDataModel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHDataModel/AHDataModel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AHDataModel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DE09412EF1D935511014FC16E9DA1303 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C169D7A2B8E3E4DD944718D2301FFA0 /* UIDeviceExtension.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIDeviceExtension/UIDeviceExtension-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIDeviceExtension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIDeviceExtension/UIDeviceExtension.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = UIDeviceExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DE59143723E148465BE1F00CEA44C987 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FB75CCA6ECFA6A2D0835462F7A5B666 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E6D35AD59974F4E637303FD022DE635E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61A1C0A5CED1C19DB87A3AF9EC390E6C /* AHServiceRouter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AHServiceRouter/AHServiceRouter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHServiceRouter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHServiceRouter/AHServiceRouter.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AHServiceRouter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E77140BFDD4F1FC99420874BE03CAF52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2058A38169468C6C5B36F37686AAF3B /* AHFMModuleManager.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AHFMModuleManager/AHFMModuleManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHFMModuleManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHFMModuleManager/AHFMModuleManager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AHFMModuleManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E82B301AD472455A1EEB5FC6569D8BF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C28696F5CA483216095C981EA32E7DFA /* AHFMAudioPlayerVCManager.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AHFMAudioPlayerVCManager/AHFMAudioPlayerVCManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHFMAudioPlayerVCManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHFMAudioPlayerVCManager/AHFMAudioPlayerVCManager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AHFMAudioPlayerVCManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EDC13E7FAD16D58D8F9C76E83F9E4459 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 575A5E0C16BBBBFCF4A1B9E911749610 /* Pods-AHFMAudioPlayerVCManager_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AHFMAudioPlayerVCManager_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AHFMAudioPlayerVCManager_Tests/Pods-AHFMAudioPlayerVCManager_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AHFMAudioPlayerVCManager_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FE6BCAE9B3033292150ADCEF44DB4D18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF2C5DC6663BE33D4E264ACBAF07E304 /* AHFMServices.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AHFMServices/AHFMServices-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHFMServices/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHFMServices/AHFMServices.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AHFMServices;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1172D66832531B0FFABDD50E90A90AE7 /* Build configuration list for PBXNativeTarget "UIDeviceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC7D8B465E509CCB54002B3738EF2532 /* Debug */,
+				DE09412EF1D935511014FC16E9DA1303 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27DA7C448D99685067A780D055CA8EB9 /* Build configuration list for PBXNativeTarget "AHDataModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F4B6D9B8FA234B1342E4F155BF8D4C2 /* Debug */,
+				CC597D1DF380CDBCA1AD849FA21A0168 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6A03C9B1314C05BD3C2FBD3F65EDF83 /* Debug */,
+				717E77604BFBB04BEAF56608A1CB2EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46913BA26F8249878BDD967650356FD2 /* Build configuration list for PBXNativeTarget "AHFMDataCenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80E040237E6824833E0249715F17A529 /* Debug */,
+				7754606ACE0E0716DF49A0103C208D8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54EA5B451529E2FF80D3EAF5EA40EFA3 /* Build configuration list for PBXNativeTarget "AHFMModuleManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E77140BFDD4F1FC99420874BE03CAF52 /* Debug */,
+				B2358B6401BD58BEDAE4272344792656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FB289D00A655F8A37F7235D66B7873C /* Build configuration list for PBXNativeTarget "AHFMNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BE7F64B9F4063B17740BDD37FC7E304 /* Debug */,
+				53D3673B17ADA847962C65E0FEFD835F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7799E1154BB9E39F805109B6915D534F /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B31D5AF4C913F1DF54D30628CE9EB678 /* Debug */,
+				78320120034A444AD81A3A66ADAED94D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		970925EFFCE5E1383297248FEEC8E684 /* Build configuration list for PBXNativeTarget "AHFMDataTransformers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC6197E2E97A9134B6606D14E6F48F2F /* Debug */,
+				AF52D4545963288A26559FFBD94C0A3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A45BFB8921528BDF2278FEC5161B1C12 /* Build configuration list for PBXNativeTarget "AHFMAudioPlayerVCManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E82B301AD472455A1EEB5FC6569D8BF3 /* Debug */,
+				0A12A301389BD413A75C5F6BE79199C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A90B298E5BE14B57527A864726DCA77D /* Build configuration list for PBXNativeTarget "Pods-AHFMAudioPlayerVCManager_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC254A96E0D88F0B38EEA0B6E493B01F /* Debug */,
+				A2B9B934942D26AC97614B0F59091E2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF283CD9F257A8A4D2264A97493B9D03 /* Build configuration list for PBXNativeTarget "AHServiceRouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				133DD389BF7C9D39D0C30682F9ECCCE1 /* Debug */,
+				E6D35AD59974F4E637303FD022DE635E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C467AD9B093C7D78772592ECA32C3ACE /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B32E869CDEE31BDCE7DD43A907A16D16 /* Debug */,
+				DE59143723E148465BE1F00CEA44C987 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C594FD21B03713A978E3E27DAF1AC516 /* Build configuration list for PBXNativeTarget "Pods-AHFMAudioPlayerVCManager_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E6043D30DB9B4F910526B27DBB5C24E /* Debug */,
+				EDC13E7FAD16D58D8F9C76E83F9E4459 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4B9F1C8E3A3E75F3829A3CE9612CA96 /* Build configuration list for PBXNativeTarget "AHFMServices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE6BCAE9B3033292150ADCEF44DB4D18 /* Debug */,
+				100CEC701942FEB737BC104136E97E03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F80660C9DE2F911D2C0C2607EF4E0998 /* Build configuration list for PBXNativeTarget "AHFMAudioPlayerVCServices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C6998602419793377637DFABA3F74F3 /* Debug */,
+				164EDF687B36BA4CC7EDE9C5DFFF8CA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA980DF40F0A14B20FEFA84151F5154D /* Build configuration list for PBXNativeTarget "KeychainAccess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65887C58B92C5DA5C268900B547D64AE /* Debug */,
+				00126DDC0E341C7598C9A036F2AE2800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

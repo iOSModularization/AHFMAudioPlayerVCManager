@@ -1,0 +1,45 @@
+{
+  "name": "AHFMAudioPlayerVCManager",
+  "version": "0.1.0",
+  "summary": "A short description of AHFMAudioPlayerVCManager.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/iOSModularization/AHFMAudioPlayerVCManager",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ivsall2012": "ivsall2012@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/iOSModularization/AHFMAudioPlayerVCManager.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "AHFMAudioPlayerVCManager/Classes/**/*",
+  "dependencies": {
+    "AHFMAudioPlayerVCServices": [
+
+    ],
+    "AHServiceRouter": [
+
+    ],
+    "AHFMModuleManager": [
+
+    ],
+    "AHFMNetworking": [
+
+    ],
+    "AHFMDataCenter": [
+
+    ],
+    "AHFMDataTransformers": [
+
+    ],
+    "SwiftyJSON": [
+
+    ]
+  }
+}
