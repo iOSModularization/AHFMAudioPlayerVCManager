@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AHFMAudioPlayerVCManager_Example' do
+  pod 'AHFMAudioPlayerVCManager', :path => '../'
+
+  target 'AHFMAudioPlayerVCManager_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
