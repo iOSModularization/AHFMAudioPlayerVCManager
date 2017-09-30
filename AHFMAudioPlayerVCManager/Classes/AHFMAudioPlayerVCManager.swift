@@ -29,7 +29,7 @@ import AHServiceRouter
 
 public struct AHFMAudioPlayerVCManager: AHFMModuleManager {
     
-    public static func register() {
+    public static func activate() {
         AHServiceRouter.registerVC(AHFMAudioPlayerVCServices.service, taskName: AHFMAudioPlayerVCServices.taskNavigation) { (userInfo) -> UIViewController? in
             guard let trackId = userInfo[AHFMAudioPlayerVCServices.keyTrackId] as? Int else {
                 return nil

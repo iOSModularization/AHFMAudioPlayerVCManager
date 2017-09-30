@@ -2,5 +2,5 @@
 
 
 public protocol AHFMModuleManager {
-    static func register()
+    static func activate()
 }

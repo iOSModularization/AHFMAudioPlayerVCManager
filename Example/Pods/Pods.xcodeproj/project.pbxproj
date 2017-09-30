@@ -11,13 +11,11 @@
 		04239B3012CF53C30A7267441735B2AF /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B972EFE6E3CC7911FCC4CE26D0B13A /* AFError.swift */; };
 		064FC6BE63716F6CDE7DC667A92D8E51 /* AHFMServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4377DA9D227490D020D08FE873CE79EF /* AHFMServices.framework */; };
 		07F612198032CD3AF00198F98B33BE91 /* AHDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B196071C7B7CE5D97F09D915F94093C3 /* AHDatabase.swift */; };
-		07FB6BA1EFD380AD847803DF13A952A0 /* AHFMAudioPlayerVCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDE0F245C54652BD03163F7107B5E01 /* AHFMAudioPlayerVCManager.swift */; };
 		098B2096AAC6FA639B883DBC36551DDB /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F9D3A18D21A02E50CD2A4C867B1A0B /* ResponseSerialization.swift */; };
 		0CABCA0975796E5011BEBCF0A78F81B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4673DFDEDD5E2B12B1FCD0FBE16D2EF0 /* Foundation.framework */; };
 		0D307173036F5A0D5C45A4D77399CBA6 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5551478DC97BB811E67D7967BFB1BB0E /* SwiftyJSON.framework */; };
 		0E2654844FF5C11A201626556904DC0C /* UIDeviceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7EE4AFEC0BA75EBCA27E32CF153C398 /* UIDeviceExtension.framework */; };
 		0E323FAA8AA1E20021F50B98E228C8BB /* AHFMEpisodeTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06D35E96C125CA593B9A863785DA2D9 /* AHFMEpisodeTransform.swift */; };
-		10DDD43E1258D46CF57CF0967B7A4A9C /* AHFMAudioPlayerVCManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 902483E0E0B5EF47C65DD3828331C2D3 /* AHFMAudioPlayerVCManager-dummy.m */; };
 		111C28295331939AEBD0B2CACBD65A3E /* AHFMServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4377DA9D227490D020D08FE873CE79EF /* AHFMServices.framework */; };
 		18642004F27FF88F231EAC95032DE33D /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C821F5BAF2E7DFFD9AFF3ED4E475C630 /* SwiftyJSON.swift */; };
 		1CCEB9C4888138BD1E8293CCCFEEEAA2 /* AHServiceRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72CA2523F8AA9538FFF0101027516A0E /* AHServiceRouter.framework */; };
@@ -66,6 +64,7 @@
 		792419F4CAD03C23F9BBA18145A707E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4673DFDEDD5E2B12B1FCD0FBE16D2EF0 /* Foundation.framework */; };
 		79A2D9A6435F394FC407B709739A1AB0 /* AHFMAudioPlayerVCServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14ABD65C409D19F1BA091F9F2461AE4F /* AHFMAudioPlayerVCServices.framework */; };
 		7B764FB2C4601D7D9C0B955620B888B0 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F6C86AC5C38711C4AD86C85F6B25AB /* SwiftyJSON-dummy.m */; };
+		7C853D5349971787BD5A656EAD543B35 /* AHFMAudioPlayerVCManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 902483E0E0B5EF47C65DD3828331C2D3 /* AHFMAudioPlayerVCManager-dummy.m */; };
 		816B89B457C4E75B04210A37DA4F3AE6 /* module.modulemap in Sources */ = {isa = PBXBuildFile; fileRef = 6B9E35623AC1E5E433925DAA054F1884 /* module.modulemap */; };
 		8A7E7F1C57A50A28A6BDBF427071816C /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE71540C9F4D93F31AB171EB03C7E6D8 /* KeychainAccess.framework */; };
 		8B387AE80B7CE5528B5EA8530B7E9173 /* AHDataModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BA3275EA5755ACF795FB6E7A525518 /* AHDataModel-dummy.m */; };
@@ -98,10 +97,10 @@
 		C5D0047506CFD843471F1E399F3AD6D4 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE71540C9F4D93F31AB171EB03C7E6D8 /* KeychainAccess.framework */; };
 		C6F4884CD185FEEFD03A64F00E4ACC86 /* AHFMNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEC748E0336D67BD815BB91596FD27E /* AHFMNetworking.framework */; };
 		CA7CB41D0C9F4942DCBF9C2344D155A8 /* AHFMShowTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670156A8B2BB61A52EE09AC20BE7425C /* AHFMShowTransform.swift */; };
+		CAB897996072848A6A1AD09753031563 /* AHFMAudioPlayerVCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996BAC34E04881BA851F96F3F82B79B /* AHFMAudioPlayerVCManager.swift */; };
 		CD3C1E69BEDB9C08B2596DE536F0B335 /* Migrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F1B4B2C39328D8D708673419AE5D06 /* Migrator.swift */; };
 		CE2656D3D1583100FB5857D997A64EF4 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B7D3EB615B29353AA92429FDF36594 /* Request.swift */; };
 		CFC0839DB72E65F3C6121D106C886C67 /* AHFMServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64834F4EEFBD438B891CE5BE23956D /* AHFMServices.swift */; };
-		D43D237D13AE436FAF2EF8F2C21F4CF5 /* AHFMManagerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821869D2F9B964D4EC148B03B25377E8 /* AHFMManagerHandler.swift */; };
 		D56183FB73DDB174D4C563BEB38CFE56 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D272B319F08BFFAB5B3A6B5FC19BE3 /* NetworkReachabilityManager.swift */; };
 		D6D7C7C19366E1763F31CCB5A0ED4925 /* module.modulemap in Sources */ = {isa = PBXBuildFile; fileRef = 94605675739D30D7F5B4F0933AF6A589 /* module.modulemap */; };
 		D7A7A5D2C62FA25EBC8B8A8BBB2A3483 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4673DFDEDD5E2B12B1FCD0FBE16D2EF0 /* Foundation.framework */; };
@@ -117,6 +116,7 @@
 		F9733CB4932C2DEBDBB574480D2A788F /* AHDataModel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8048D9D99CE8E06FF9605DF65FA616DF /* AHDataModel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F999B7016FF641BCBEAAC2CC1DFF1592 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5551478DC97BB811E67D7967BFB1BB0E /* SwiftyJSON.framework */; };
 		FBEB93C14BEB82C970FCCA3D63F295A4 /* AHDBColumnInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7F685F3FADFE52B47C0F28D88C1C7E /* AHDBColumnInfo.swift */; };
+		FD7943598B21EE2DD9690967B06DCA88 /* AHFMManagerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B58FC5929A0CEF2C1E723DECB19316 /* AHFMManagerHandler.swift */; };
 		FD7C4F7285DEFE8478F38632B1BEAC07 /* Pods-AHFMAudioPlayerVCManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D869B65D91B30D5BE03518AB0BE91D /* Pods-AHFMAudioPlayerVCManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -353,32 +353,31 @@
 		086297BFC6FBB9E144822700E1D7B61C /* AHFMNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AHFMNetworking-dummy.m"; sourceTree = "<group>"; };
 		09AC079B1F4193744EFDD07FFDB83855 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		0ABFE1D3B9D6FA140C006ADF5D94C323 /* AHFMNetworking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHFMNetworking.swift; path = AHFMNetworking/Classes/AHFMNetworking.swift; sourceTree = "<group>"; };
-		0BDE0F245C54652BD03163F7107B5E01 /* AHFMAudioPlayerVCManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AHFMAudioPlayerVCManager.swift; sourceTree = "<group>"; };
 		0FE17C96A4B6EB145453F371BF24D5BA /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
 		10255F2A22CB04CD3C49848C74C14832 /* OAuth2Handler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Handler.swift; path = AHFMNetworking/Classes/OAuth2Handler.swift; sourceTree = "<group>"; };
 		120D9FA7AFDFABA632C4D36004D7FC25 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1221431E686D1A66956752111D72DBCB /* Pods-AHFMAudioPlayerVCManager_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AHFMAudioPlayerVCManager_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		13F9D3A18D21A02E50CD2A4C867B1A0B /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		14ABD65C409D19F1BA091F9F2461AE4F /* AHFMAudioPlayerVCServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHFMAudioPlayerVCServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1672678E3BF654346693A10EB3DC6A79 /* AHFMNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHFMNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1672678E3BF654346693A10EB3DC6A79 /* AHFMNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AHFMNetworking.framework; path = AHFMNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		169EF62D6932CA999B4B93737E5F5E27 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		171735C5DDED78174A853D8DA77B7750 /* AHFMServices-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMServices-prefix.pch"; sourceTree = "<group>"; };
-		1BFC1A6E2EED40AAEEF650E286165FB0 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BFC1A6E2EED40AAEEF650E286165FB0 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CA42E9F61A83A652A348A3215A0B3E3 /* AHFMServices-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMServices-umbrella.h"; sourceTree = "<group>"; };
-		1ED0312039EF9B0583BDD035B343B906 /* Pods-AHFMAudioPlayerVCManager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AHFMAudioPlayerVCManager_Example.modulemap"; sourceTree = "<group>"; };
+		1ED0312039EF9B0583BDD035B343B906 /* Pods-AHFMAudioPlayerVCManager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AHFMAudioPlayerVCManager_Example.modulemap"; sourceTree = "<group>"; };
 		246186E1405C3A17C5CAF374DBA0CFDD /* AHDataModel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AHDataModel.xcconfig; sourceTree = "<group>"; };
-		26216483CD46DFF2BAE18BA84A09FE96 /* Pods_AHFMAudioPlayerVCManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHFMAudioPlayerVCManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26216483CD46DFF2BAE18BA84A09FE96 /* Pods_AHFMAudioPlayerVCManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AHFMAudioPlayerVCManager_Example.framework; path = "Pods-AHFMAudioPlayerVCManager_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27757B3292203F3A31493DD184E0AEE0 /* AHFMNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMNetworking-prefix.pch"; sourceTree = "<group>"; };
 		28F1B4B2C39328D8D708673419AE5D06 /* Migrator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Migrator.swift; path = AHDataModel/Classes/Migrator.swift; sourceTree = "<group>"; };
-		292582FFB9ADAE2A78D1C1BAC3B66AB6 /* AHServiceRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHServiceRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		29FC386E3E170D550D4A446E390DF786 /* AHFMAudioPlayerVCServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHFMAudioPlayerVCServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		292582FFB9ADAE2A78D1C1BAC3B66AB6 /* AHServiceRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AHServiceRouter.framework; path = AHServiceRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29FC386E3E170D550D4A446E390DF786 /* AHFMAudioPlayerVCServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AHFMAudioPlayerVCServices.framework; path = AHFMAudioPlayerVCServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A1F03B64F22F4C1560595F8A7D30840 /* KeychainAccess.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainAccess.xcconfig; sourceTree = "<group>"; };
 		2A65A01C3D66CD4E511B0072E21737CA /* Pods-AHFMAudioPlayerVCManager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AHFMAudioPlayerVCManager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2CBBCDED6E4B4D6C98B480B2F789B514 /* KeychainAccess.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KeychainAccess.modulemap; sourceTree = "<group>"; };
+		2CBBCDED6E4B4D6C98B480B2F789B514 /* KeychainAccess.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KeychainAccess.modulemap; sourceTree = "<group>"; };
 		30065464EE689CFA4C3FF785FF395785 /* AHFMDataCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHFMDataCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33D869B65D91B30D5BE03518AB0BE91D /* Pods-AHFMAudioPlayerVCManager_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AHFMAudioPlayerVCManager_Tests-umbrella.h"; sourceTree = "<group>"; };
 		3440038EEA5F963D773423B76DCBFE81 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		34B6EF822AD7F40AD780EB9535638AD6 /* AHFMDataCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHFMDataCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34B6EF822AD7F40AD780EB9535638AD6 /* AHFMDataCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AHFMDataCenter.framework; path = AHFMDataCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		372541F756C09F83E4AE95879EE2202D /* AHFMDataTransformers.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AHFMDataTransformers.xcconfig; sourceTree = "<group>"; };
 		37F2EC8D464D54FE4ED3B58467FEDFFA /* AHServiceRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHServiceRouter.swift; path = AHServiceRouter/Classes/AHServiceRouter.swift; sourceTree = "<group>"; };
 		38C8383129B5F575F8161D2C7400070F /* AHServiceRouter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AHServiceRouter-dummy.m"; sourceTree = "<group>"; };
@@ -393,7 +392,7 @@
 		4673DFDEDD5E2B12B1FCD0FBE16D2EF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		4B2AB8BFECC4DF76A20673AE8787204A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C7804118000EE018AC69C859121A215 /* UIDeviceExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIDeviceExtension-umbrella.h"; sourceTree = "<group>"; };
-		4CF410BFDF499DAD3E71E1F987FF421A /* AHFMAudioPlayerVCManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHFMAudioPlayerVCManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CF410BFDF499DAD3E71E1F987FF421A /* AHFMAudioPlayerVCManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AHFMAudioPlayerVCManager.framework; path = AHFMAudioPlayerVCManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E0E8716C47FEBB30B55C538B33054CD /* AHFMDataTransformers-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AHFMDataTransformers-dummy.m"; sourceTree = "<group>"; };
 		5551478DC97BB811E67D7967BFB1BB0E /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		563A8C620EB157A68C80BF24ED8511CB /* AHFMDataCenter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMDataCenter-prefix.pch"; sourceTree = "<group>"; };
@@ -401,64 +400,63 @@
 		575A5E0C16BBBBFCF4A1B9E911749610 /* Pods-AHFMAudioPlayerVCManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AHFMAudioPlayerVCManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		59F93F1909E0741FBDEED8B710EA9C9F /* AHFMShow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHFMShow.swift; path = AHFMDataCenter/Classes/AHFMShow.swift; sourceTree = "<group>"; };
 		5A0A83D5D06C31A339B3A5262F71EFD9 /* AHFMModuleManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMModuleManager-prefix.pch"; sourceTree = "<group>"; };
-		5B1CAACF742D7E84EA8347E181152A9C /* Pods-AHFMAudioPlayerVCManager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AHFMAudioPlayerVCManager_Tests.modulemap"; sourceTree = "<group>"; };
+		5B1CAACF742D7E84EA8347E181152A9C /* Pods-AHFMAudioPlayerVCManager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AHFMAudioPlayerVCManager_Tests.modulemap"; sourceTree = "<group>"; };
 		5BC267F73ACEA09B7ADAA0640268D8A5 /* AHNetworkConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHNetworkConstants.swift; path = AHFMNetworking/Classes/AHNetworkConstants.swift; sourceTree = "<group>"; };
 		5E5E725BAFEAAFA94A9599BE89D35DD1 /* AHFMDataTransformers-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMDataTransformers-umbrella.h"; sourceTree = "<group>"; };
 		5EFE41ED4DD262751E0ACCE2E9786053 /* KeychainAccess-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainAccess-prefix.pch"; sourceTree = "<group>"; };
-		605BF00D99784733D362FEB5017E0786 /* AHFMModuleManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHFMModuleManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		605BF00D99784733D362FEB5017E0786 /* AHFMModuleManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AHFMModuleManager.framework; path = AHFMModuleManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61A1C0A5CED1C19DB87A3AF9EC390E6C /* AHServiceRouter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AHServiceRouter.xcconfig; sourceTree = "<group>"; };
 		622399FA8125D14EE1BFF9AB0FB90C62 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		62B9A35554DCE37D22D7C356AD976BB6 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIDevice+Extension.swift"; path = "UIDeviceExtension/Classes/UIDevice+Extension.swift"; sourceTree = "<group>"; };
-		62BF859D39485A81BCFB54C34559A7C1 /* AHDataModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHDataModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62BF859D39485A81BCFB54C34559A7C1 /* AHDataModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AHDataModel.framework; path = AHDataModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62D272B319F08BFFAB5B3A6B5FC19BE3 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		670156A8B2BB61A52EE09AC20BE7425C /* AHFMShowTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHFMShowTransform.swift; path = AHFMDataTransformers/Classes/AHFMShowTransform.swift; sourceTree = "<group>"; };
 		68A7BBC6A0237B917704F9D56A9E37F8 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		694BB110FB73F478534C2AF7F298878A /* Pods-AHFMAudioPlayerVCManager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AHFMAudioPlayerVCManager_Example-dummy.m"; sourceTree = "<group>"; };
 		6A7F685F3FADFE52B47C0F28D88C1C7E /* AHDBColumnInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHDBColumnInfo.swift; path = AHDataModel/Classes/AHDBColumnInfo.swift; sourceTree = "<group>"; };
-		6B3DC839B9A4097FBD1C70C8EB2E534B /* AHServiceRouter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AHServiceRouter.modulemap; sourceTree = "<group>"; };
-		6B9E35623AC1E5E433925DAA054F1884 /* module.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = ModuleMaps/iphoneos/module.modulemap; sourceTree = "<group>"; };
+		6B3DC839B9A4097FBD1C70C8EB2E534B /* AHServiceRouter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AHServiceRouter.modulemap; sourceTree = "<group>"; };
+		6B9E35623AC1E5E433925DAA054F1884 /* module.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = module.modulemap; path = ModuleMaps/iphoneos/module.modulemap; sourceTree = "<group>"; };
 		6FB663794097DF782E76DF064B858084 /* Pods-AHFMAudioPlayerVCManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AHFMAudioPlayerVCManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		709C8B820DB37D46A6AC98572AB4D3A9 /* AHFMAudioPlayerVCManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMAudioPlayerVCManager-umbrella.h"; sourceTree = "<group>"; };
 		717A3714665E55B45BB6F992204260FE /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72CA2523F8AA9538FFF0101027516A0E /* AHServiceRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHServiceRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73755C6B2725F3E4E973D9778B6843C5 /* UIDeviceExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIDeviceExtension-prefix.pch"; sourceTree = "<group>"; };
 		73F0C68FFF92312470C6187B132F74F4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		74454C417F30754B13740993E0570B5A /* AHFMDataTransformers.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AHFMDataTransformers.modulemap; sourceTree = "<group>"; };
+		74454C417F30754B13740993E0570B5A /* AHFMDataTransformers.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AHFMDataTransformers.modulemap; sourceTree = "<group>"; };
 		75770AF5FB1296BE1D98A166AA13A3FC /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		75B972EFE6E3CC7911FCC4CE26D0B13A /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		76F6C86AC5C38711C4AD86C85F6B25AB /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
 		792C2492ADB2F724B60B7FBBB06E384B /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
-		79BB7D2A42A3DEFE35A16335CE92B8BE /* AHFMDataTransformers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHFMDataTransformers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79BB7D2A42A3DEFE35A16335CE92B8BE /* AHFMDataTransformers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AHFMDataTransformers.framework; path = AHFMDataTransformers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A1A602225A6A740AE37168C703E001E /* Pods-AHFMAudioPlayerVCManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AHFMAudioPlayerVCManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7B4BB33039AB60ED4DE970DB0C8C1A6D /* AHFMNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMNetworking-umbrella.h"; sourceTree = "<group>"; };
 		7CEF41D4CD23467DF6C131552A56A132 /* Pods-AHFMAudioPlayerVCManager_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AHFMAudioPlayerVCManager_Example-frameworks.sh"; sourceTree = "<group>"; };
-		7E43A3E4D3B892CD5C4C55E61379CE46 /* AHDataModel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AHDataModel.modulemap; sourceTree = "<group>"; };
+		7E43A3E4D3B892CD5C4C55E61379CE46 /* AHDataModel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AHDataModel.modulemap; sourceTree = "<group>"; };
 		7EF7C986D6AF7AAE3E09C7884A7FE8F0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F22C68D223D0CC59FD740E1612E9992 /* AHFMModuleManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AHFMModuleManager-dummy.m"; sourceTree = "<group>"; };
 		8048D9D99CE8E06FF9605DF65FA616DF /* AHDataModel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHDataModel-umbrella.h"; sourceTree = "<group>"; };
-		817F7C639FFFD486C5CF3CB93D3CB74B /* AHFMAudioPlayerVCManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AHFMAudioPlayerVCManager.modulemap; sourceTree = "<group>"; };
-		821869D2F9B964D4EC148B03B25377E8 /* AHFMManagerHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AHFMManagerHandler.swift; sourceTree = "<group>"; };
+		817F7C639FFFD486C5CF3CB93D3CB74B /* AHFMAudioPlayerVCManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AHFMAudioPlayerVCManager.modulemap; sourceTree = "<group>"; };
 		840DCF86B157698542521D50D54EF446 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
-		8504930D1469365ED61C708C72947F38 /* AHFMNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AHFMNetworking.modulemap; sourceTree = "<group>"; };
+		8504930D1469365ED61C708C72947F38 /* AHFMNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AHFMNetworking.modulemap; sourceTree = "<group>"; };
 		858FE4B24BCD645EBF0FF56CA416BC91 /* AHFMDataTransformers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHFMDataTransformers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86B2AE17B315A587EFDBD41F16C42373 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88715EA31689CB0D5E1C1D4F7C54F4C7 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
-		8A051F0B61ADE8BC11B80F1B917BBE07 /* AHFMDataCenter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AHFMDataCenter.modulemap; sourceTree = "<group>"; };
+		8A051F0B61ADE8BC11B80F1B917BBE07 /* AHFMDataCenter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AHFMDataCenter.modulemap; sourceTree = "<group>"; };
 		8C169D7A2B8E3E4DD944718D2301FFA0 /* UIDeviceExtension.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIDeviceExtension.xcconfig; sourceTree = "<group>"; };
 		8C5D875FE528B112C7AFADBFB0B397B9 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		8C65243DBD7E939838BD25D6E2F2DD69 /* Pods_AHFMAudioPlayerVCManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHFMAudioPlayerVCManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C65243DBD7E939838BD25D6E2F2DD69 /* Pods_AHFMAudioPlayerVCManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AHFMAudioPlayerVCManager_Tests.framework; path = "Pods-AHFMAudioPlayerVCManager_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DB8C563B118F43C9AB2EC58BADF5787 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		8F12B22685EA8D2E1753922AEC8051B5 /* AHFMAudioPlayerVCServices.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHFMAudioPlayerVCServices.swift; path = AHFMAudioPlayerVCServices/Classes/AHFMAudioPlayerVCServices.swift; sourceTree = "<group>"; };
 		8FDEC495359C6F256004EB96A8960B78 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		902483E0E0B5EF47C65DD3828331C2D3 /* AHFMAudioPlayerVCManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AHFMAudioPlayerVCManager-dummy.m"; sourceTree = "<group>"; };
 		918C329CBC38D9537E6C806A6C938581 /* AHFMAudioPlayerVCServices-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AHFMAudioPlayerVCServices-dummy.m"; sourceTree = "<group>"; };
 		92B241992DA81A58BE07A106600F8D1B /* AHFMSubscribedShow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHFMSubscribedShow.swift; path = AHFMDataCenter/Classes/AHFMSubscribedShow.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		940F1F85F58E3561BE1520189EB62605 /* AHFMAudioPlayerVCServices-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMAudioPlayerVCServices-umbrella.h"; sourceTree = "<group>"; };
-		94605675739D30D7F5B4F0933AF6A589 /* module.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = ModuleMaps/iphonesimulator/module.modulemap; sourceTree = "<group>"; };
+		94605675739D30D7F5B4F0933AF6A589 /* module.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = module.modulemap; path = ModuleMaps/iphonesimulator/module.modulemap; sourceTree = "<group>"; };
 		9504DD247F39D89593F9883CC65344F3 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
 		9768CF69BB4FEE07D530597931EAEEC2 /* AHFMModuleManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHFMModuleManager.swift; path = AHFMModuleManager/Classes/AHFMModuleManager.swift; sourceTree = "<group>"; };
-		979A2381840E5EDE0E92A95A055BFF58 /* UIDeviceExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UIDeviceExtension.modulemap; sourceTree = "<group>"; };
+		979A2381840E5EDE0E92A95A055BFF58 /* UIDeviceExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = UIDeviceExtension.modulemap; sourceTree = "<group>"; };
 		984BE8ECD5BC98795C9276E6BB9C25C5 /* Pods-AHFMAudioPlayerVCManager_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AHFMAudioPlayerVCManager_Example-resources.sh"; sourceTree = "<group>"; };
 		987D2752E5AA8E9F3C06213081FF47E0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99FD3E1D6CA04F41630AACAC11DDF6C4 /* KeychainAccess-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainAccess-umbrella.h"; sourceTree = "<group>"; };
@@ -467,19 +465,21 @@
 		9E2C8656B23112A7D5D9BEF6BA3D56CE /* AHFMAudioPlayerVCServices-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMAudioPlayerVCServices-prefix.pch"; sourceTree = "<group>"; };
 		9EE307A3F114C0ACC69215060A999272 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F06E3B79870B2B86436AD21F8A926CC /* AHFMModuleManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHFMModuleManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0157AFD3A08DE1D6862902E3F426713 /* AHFMServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHFMServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0157AFD3A08DE1D6862902E3F426713 /* AHFMServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AHFMServices.framework; path = AHFMServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A17E40B2056F1A733C4238FE85FC1DFC /* AHFMDataTransformers-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMDataTransformers-prefix.pch"; sourceTree = "<group>"; };
 		A266E47AE38B0691A19B86876E911ACC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A57CDDA629B4D8749F7AA37B90286700 /* Pods-AHFMAudioPlayerVCManager_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AHFMAudioPlayerVCManager_Example-umbrella.h"; sourceTree = "<group>"; };
+		A996BAC34E04881BA851F96F3F82B79B /* AHFMAudioPlayerVCManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AHFMAudioPlayerVCManager.swift; sourceTree = "<group>"; };
 		AA8ECE59670826CF7F6E0E57BF17806A /* Pods-AHFMAudioPlayerVCManager_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AHFMAudioPlayerVCManager_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		AB87E2EAB0E1E171C7551F8778008022 /* AHDataModelQuery.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHDataModelQuery.swift; path = AHDataModel/Classes/AHDataModelQuery.swift; sourceTree = "<group>"; };
 		B196071C7B7CE5D97F09D915F94093C3 /* AHDatabase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHDatabase.swift; path = AHDataModel/Classes/AHDatabase.swift; sourceTree = "<group>"; };
 		B1BE179720555631043E45268138ACF2 /* AHFMEpisodeInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHFMEpisodeInfo.swift; path = AHFMDataCenter/Classes/AHFMEpisodeInfo.swift; sourceTree = "<group>"; };
 		B2468804EFD27BB649BCF5E0ED2FBBA4 /* AHFMEpisodeHistory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHFMEpisodeHistory.swift; path = AHFMDataCenter/Classes/AHFMEpisodeHistory.swift; sourceTree = "<group>"; };
-		B2FA1F53208AEB27F2BEF3C03A56A4A2 /* AHFMServices.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AHFMServices.modulemap; sourceTree = "<group>"; };
+		B2FA1F53208AEB27F2BEF3C03A56A4A2 /* AHFMServices.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AHFMServices.modulemap; sourceTree = "<group>"; };
 		B3B7D3EB615B29353AA92429FDF36594 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		B3F56C4424D2A43885D84FA6EAEFA059 /* AHFMModuleManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AHFMModuleManager.modulemap; sourceTree = "<group>"; };
+		B3F56C4424D2A43885D84FA6EAEFA059 /* AHFMModuleManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AHFMModuleManager.modulemap; sourceTree = "<group>"; };
 		B4C41E7586A8F6098ACF83D587E7DF54 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5B58FC5929A0CEF2C1E723DECB19316 /* AHFMManagerHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AHFMManagerHandler.swift; sourceTree = "<group>"; };
 		B7084D49E7A9084C5534018FBD1FA05A /* UIDeviceExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIDeviceExtension-dummy.m"; sourceTree = "<group>"; };
 		B8916B9007F8E5317E85BCAFCD623850 /* Pods-AHFMAudioPlayerVCManager_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AHFMAudioPlayerVCManager_Tests-resources.sh"; sourceTree = "<group>"; };
 		B9FF5E2FF4E092095FF3BA5F04C311D3 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
@@ -499,27 +499,27 @@
 		CE5ECBE51AECD73CBFE1061290F54925 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF6CD2D4AC3DA364D01B0B8C731BD175 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
 		D035EF31B4534599CB2ADB29FD1D48C2 /* AHFMDataCenter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMDataCenter-umbrella.h"; sourceTree = "<group>"; };
-		D0772A4CDCB1634F5D7EC09FFED40B31 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0772A4CDCB1634F5D7EC09FFED40B31 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1555D0A818F1C21CF9DD603E3537BA6 /* Pods-AHFMAudioPlayerVCManager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AHFMAudioPlayerVCManager_Tests-dummy.m"; sourceTree = "<group>"; };
 		D2058A38169468C6C5B36F37686AAF3B /* AHFMModuleManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AHFMModuleManager.xcconfig; sourceTree = "<group>"; };
 		D247790742B033FF8873A49040609D39 /* AHDataModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHDataModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D300377462B4C2173800362DD3FCEF14 /* AHFMAudioPlayerVCServices.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AHFMAudioPlayerVCServices.modulemap; sourceTree = "<group>"; };
+		D300377462B4C2173800362DD3FCEF14 /* AHFMAudioPlayerVCServices.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AHFMAudioPlayerVCServices.modulemap; sourceTree = "<group>"; };
 		D7BA3275EA5755ACF795FB6E7A525518 /* AHDataModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AHDataModel-dummy.m"; sourceTree = "<group>"; };
 		D8C744D937EDFC21540250C97D5E84DD /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = Lib/KeychainAccess/Keychain.swift; sourceTree = "<group>"; };
 		D970049574DF0689EDCDBACE686D6821 /* AHKeychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHKeychain.swift; path = AHFMNetworking/Classes/AHKeychain.swift; sourceTree = "<group>"; };
 		DAEC748E0336D67BD815BB91596FD27E /* AHFMNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHFMNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC46D497F44643F48D54F10023BF7837 /* UIDeviceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIDeviceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC46D497F44643F48D54F10023BF7837 /* UIDeviceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UIDeviceExtension.framework; path = UIDeviceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC944AF82165D87BFDC557ADDB589B0B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6B4DC63AFB3B8BDF7A716EE45AF7F20 /* AHFMNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AHFMNetworking.xcconfig; sourceTree = "<group>"; };
-		EC575D3C8FCD911F8B6D274092ABA43A /* KeychainAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeychainAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC575D3C8FCD911F8B6D274092ABA43A /* KeychainAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KeychainAccess.framework; path = KeychainAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F06D35E96C125CA593B9A863785DA2D9 /* AHFMEpisodeTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHFMEpisodeTransform.swift; path = AHFMDataTransformers/Classes/AHFMEpisodeTransform.swift; sourceTree = "<group>"; };
 		F12F1623407EEE35B97708E43D187826 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		F16977CC9D2AA9FEB22770AB07EE8B32 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F20126E086271532CA9B5ABCC885D309 /* AHFMDataCenter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AHFMDataCenter.xcconfig; sourceTree = "<group>"; };
 		F3B710EE6965BAFC2B5B7B1F667F661E /* Pods-AHFMAudioPlayerVCManager_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AHFMAudioPlayerVCManager_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		F3C582F6C5DE74289924182582976962 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		F3C582F6C5DE74289924182582976962 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
 		F8BA37B5654414ABE671FA8FF3D75FA9 /* KeychainAccess-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeychainAccess-dummy.m"; sourceTree = "<group>"; };
-		F8F76C02530BAA5253BE52E8D5D7FD16 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		F8F76C02530BAA5253BE52E8D5D7FD16 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		FC74925D0B198E41419EB6AB4606AC62 /* Migration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Migration.swift; path = AHDataModel/Classes/Migration.swift; sourceTree = "<group>"; };
 		FE71540C9F4D93F31AB171EB03C7E6D8 /* KeychainAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeychainAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -695,15 +695,6 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		1186D65A98B88CBB149D6EF098E20E5E /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				0BDE0F245C54652BD03163F7107B5E01 /* AHFMAudioPlayerVCManager.swift */,
-				821869D2F9B964D4EC148B03B25377E8 /* AHFMManagerHandler.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		123E39B2AB30E6D05AA1E3192496E103 /* AHFMNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -713,6 +704,7 @@
 				10255F2A22CB04CD3C49848C74C14832 /* OAuth2Handler.swift */,
 				A22E3F8294066F3912A3ED615E705039 /* Support Files */,
 			);
+			name = AHFMNetworking;
 			path = AHFMNetworking;
 			sourceTree = "<group>";
 		};
@@ -722,6 +714,7 @@
 				62B9A35554DCE37D22D7C356AD976BB6 /* UIDevice+Extension.swift */,
 				BA5E3C6D176779A05DB563B080556FFB /* Support Files */,
 			);
+			name = UIDeviceExtension;
 			path = UIDeviceExtension;
 			sourceTree = "<group>";
 		};
@@ -747,6 +740,7 @@
 				622399FA8125D14EE1BFF9AB0FB90C62 /* Validation.swift */,
 				E22353B168AB896BB13306FEAAE5A5CE /* Support Files */,
 			);
+			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -819,6 +813,7 @@
 				D8C744D937EDFC21540250C97D5E84DD /* Keychain.swift */,
 				DC76DE69A4867993F05D23DE239E4B1F /* Support Files */,
 			);
+			name = KeychainAccess;
 			path = KeychainAccess;
 			sourceTree = "<group>";
 		};
@@ -829,6 +824,7 @@
 				670156A8B2BB61A52EE09AC20BE7425C /* AHFMShowTransform.swift */,
 				EBF0FF333CB83243785E7BE2D064B6F4 /* Support Files */,
 			);
+			name = AHFMDataTransformers;
 			path = AHFMDataTransformers;
 			sourceTree = "<group>";
 		};
@@ -844,6 +840,16 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/AHFMAudioPlayerVCServices";
+			sourceTree = "<group>";
+		};
+		4D96838F51C68CBF1059553999EFB118 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A996BAC34E04881BA851F96F3F82B79B /* AHFMAudioPlayerVCManager.swift */,
+				B5B58FC5929A0CEF2C1E723DECB19316 /* AHFMManagerHandler.swift */,
+			);
+			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		55AF74F3C8FAF6FEF50ADB3D412D1442 /* Support Files */ = {
@@ -884,6 +890,7 @@
 				9768CF69BB4FEE07D530597931EAEEC2 /* AHFMModuleManager.swift */,
 				ADB47218F076A4EA7770994602D5D79F /* Support Files */,
 			);
+			name = AHFMModuleManager;
 			path = AHFMModuleManager;
 			sourceTree = "<group>";
 		};
@@ -893,6 +900,7 @@
 				3B64834F4EEFBD438B891CE5BE23956D /* AHFMServices.swift */,
 				277063F7611E4A5A658C80DD50D45363 /* Support Files */,
 			);
+			name = AHFMServices;
 			path = AHFMServices;
 			sourceTree = "<group>";
 		};
@@ -920,8 +928,9 @@
 		9191B531C46A754814D08E536C86DCBD /* AHFMAudioPlayerVCManager */ = {
 			isa = PBXGroup;
 			children = (
-				1186D65A98B88CBB149D6EF098E20E5E /* Classes */,
+				4D96838F51C68CBF1059553999EFB118 /* Classes */,
 			);
+			name = AHFMAudioPlayerVCManager;
 			path = AHFMAudioPlayerVCManager;
 			sourceTree = "<group>";
 		};
@@ -931,6 +940,7 @@
 				8F12B22685EA8D2E1753922AEC8051B5 /* AHFMAudioPlayerVCServices.swift */,
 				4D770D425AC5A29ADC4651BF51738674 /* Support Files */,
 			);
+			name = AHFMAudioPlayerVCServices;
 			path = AHFMAudioPlayerVCServices;
 			sourceTree = "<group>";
 		};
@@ -1018,6 +1028,7 @@
 				37F2EC8D464D54FE4ED3B58467FEDFFA /* AHServiceRouter.swift */,
 				55AF74F3C8FAF6FEF50ADB3D412D1442 /* Support Files */,
 			);
+			name = AHServiceRouter;
 			path = AHServiceRouter;
 			sourceTree = "<group>";
 		};
@@ -1055,6 +1066,7 @@
 				C821F5BAF2E7DFFD9AFF3ED4E475C630 /* SwiftyJSON.swift */,
 				AAE5906713570721A38FAE8EAE4E4402 /* Support Files */,
 			);
+			name = SwiftyJSON;
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
@@ -1134,6 +1146,7 @@
 				94605675739D30D7F5B4F0933AF6A589 /* module.modulemap */,
 				ABAE1C4B20EC4F883159E802A627C5F0 /* Support Files */,
 			);
+			name = AHDataModel;
 			path = AHDataModel;
 			sourceTree = "<group>";
 		};
@@ -1148,6 +1161,7 @@
 				92B241992DA81A58BE07A106600F8D1B /* AHFMSubscribedShow.swift */,
 				360AF14894DFD8051F026EFCC3583B63 /* Support Files */,
 			);
+			name = AHFMDataCenter;
 			path = AHFMDataCenter;
 			sourceTree = "<group>";
 		};
@@ -1452,7 +1466,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A45BFB8921528BDF2278FEC5161B1C12 /* Build configuration list for PBXNativeTarget "AHFMAudioPlayerVCManager" */;
 			buildPhases = (
-				29D186D7D34A1FA53887968598A7614E /* Sources */,
+				A06D60A49EB166C9AACA0869281D7FB7 /* Sources */,
 				EFA6571D12C8E22472923CCB6F0C5563 /* Frameworks */,
 				08620C67D827F6386827BD1A0DFEC1C5 /* Headers */,
 			);
@@ -1683,16 +1697,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		29D186D7D34A1FA53887968598A7614E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				07FB6BA1EFD380AD847803DF13A952A0 /* AHFMAudioPlayerVCManager.swift in Sources */,
-				10DDD43E1258D46CF57CF0967B7A4A9C /* AHFMAudioPlayerVCManager-dummy.m in Sources */,
-				D43D237D13AE436FAF2EF8F2C21F4CF5 /* AHFMManagerHandler.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2D419B247CD12389CF29211851069797 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1743,6 +1747,16 @@
 				03DCAF19199BEC7662494FF4FEB468C3 /* AHKeychain.swift in Sources */,
 				B26F4B89B7837D6EE5AD2DD63DD7540E /* AHNetworkConstants.swift in Sources */,
 				25BAE52D0308110CC7EE99B88C0FD6A4 /* OAuth2Handler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A06D60A49EB166C9AACA0869281D7FB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C853D5349971787BD5A656EAD543B35 /* AHFMAudioPlayerVCManager-dummy.m in Sources */,
+				CAB897996072848A6A1AD09753031563 /* AHFMAudioPlayerVCManager.swift in Sources */,
+				FD7943598B21EE2DD9690967B06DCA88 /* AHFMManagerHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
