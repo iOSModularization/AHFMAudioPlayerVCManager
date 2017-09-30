@@ -61,68 +61,36 @@ public class AHFMManagerHandler: NSObject {
 
 extension AHFMManagerHandler {
     func handleNextOrPrevious(_ vc: UIViewController,trackId: Int, albumnId:Int,shouldGetNext: Bool) {
-        if self.episodes.count > 0, let preEp = getPrevious(trackId, self.episodes) {
-            getEpisodeAndPerform(vc, trackId: preEp.id)
+        if self.episodes.count > 0{
+            var ep: AHFMEpisode?
+            if shouldGetNext {
+                ep = self.getNext(trackId, self.episodes)
+            }else{
+                ep = self.getPrevious(trackId, self.episodes)
+            }
+            self.getEpisodeAndPerform(vc, trackId: ep?.id ?? nil)
             return
         }
         
         
         let eps = AHFMEpisode.query("showId", "=", albumnId).OrderBy("createdAt", isASC: true).run()
         self.episodes.append(contentsOf: eps)
-        if eps.count > 0, let preEp = getPrevious(trackId, self.episodes) {
+        if eps.count > 0{
             
-            getEpisodeAndPerform(vc, trackId: preEp.id)
+            var ep: AHFMEpisode?
+            if shouldGetNext {
+                ep = self.getNext(trackId, self.episodes)
+            }else{
+                ep = self.getPrevious(trackId, self.episodes)
+            }
+            self.getEpisodeAndPerform(vc, trackId: ep?.id ?? nil)
             
         }else{
-            requestEpisodes(byShowID: albumnId, {[weak self] (epModels) in
-                guard self != nil else {return}
-                
-                let shouldGetNext = shouldGetNext
-                let trackId = trackId
-                
-                self?.episodes.append(contentsOf: epModels)
-                
-                AHFMEpisode.write {
-                    guard self != nil else {return}
-                    do {
-                        // if insert fails, let it. Since we don't want to override values already in the DB.
-                        try AHFMEpisode.insert(models: self!.episodes)
-                    }catch _ {
-                        
-                    }
-                    
-                    DispatchQueue.main.async {
-                        var ep: AHFMEpisode?
-                        if shouldGetNext {
-                            ep = self?.getNext(trackId, self!.episodes)
-                        }else{
-                            ep = self?.getPrevious(trackId, self!.episodes)
-                        }
-                        self?.getEpisodeAndPerform(vc, trackId: ep?.id ?? nil)
-                    }
-                    
-                }
-            })
+            // should have already fetched eps at intial load.
+            self.getEpisodeAndPerform(vc, trackId: nil)
         }
-    }
-    
-    func requestEpisodes(byShowID: Int, _ completion: @escaping (_ episodeModels: [AHFMEpisode])->Void) {
-        networking.episodes(byShowID: byShowID, { (data, _) in
-            DispatchQueue.global().async {
-                if let data = data, let jsonEpisodes = JSON(data).array {
-                    let episodes = AHFMEpisodeTransform.transformJsonEpisodes(jsonEpisodes)
-                    var episodeModels = [AHFMEpisode]()
-                    for ep in episodes {
-                        let model = AHFMEpisode(with: ep)
-                        episodeModels.append(model)
-                    }
-                    DispatchQueue.main.async {
-                        completion(episodeModels)
-                    }
-                    
-                }
-            }
-        })
+        
+        
     }
     
     func getNext(_ currentEpisodeId: Int, _ eps: [AHFMEpisode]) -> AHFMEpisode? {
@@ -176,24 +144,57 @@ extension AHFMManagerHandler {
         if let ep = AHFMEpisode.query(byPrimaryKey: trackId) {
             let epInfo = AHFMEpisodeInfo.query(byPrimaryKey: trackId)
             let dict = mergeInfo(ep: ep, epInfo: epInfo)
+            
+            
+            if self.episodes.count == 0{
+                let eps = AHFMEpisode.query("showId", "=", ep.showId).OrderBy("createdAt", isASC: true).run()
+                self.episodes.append(contentsOf: eps)
+            }
             vc.perform(Selector(("reload:")), with: dict)
         }else{
-            networking.episode(byEpisodeId: trackId, { (data, _) in
+            networking.episode(byEpisodeId: trackId, {[weak self] (data, _) in
+                guard self != nil else {return}
+                
                 if let data = data {
                     let epJson = JSON(data)
                     if let epDict = AHFMEpisodeTransform.jsonToEpisode(epJson) {
                         let ep = AHFMEpisode(with: epDict)
-                        AHFMEpisode.write {
-                            do {
-                                // use insert, to make sure it wouldn't override values if there's any.
-                                try AHFMEpisode.insert(model: ep)
-                            }catch _ {
-                                
-                            }
+                        let eps = AHFMEpisode.query("showId", "=", ep.showId).run()
+                        
+                        /// no eps in the DB, fetch now.
+                        if eps.count == 0 {
+                            self?.fetchEpisodes(byShowId: ep.showId, {
+                                DispatchQueue.main.async {
+                                    if self?.episodes.index(of: ep) == nil {
+                                        self?.episodes.append(ep)
+                                        AHFMEpisode.write {
+                                            try? AHFMEpisode.insert(model: ep)
+                                        }
+                                    }
+                                    let eps = self?.episodes.sorted(by: { (ep1, ep2) -> Bool in
+                                        if ep1.createdAt == nil {
+                                            return false
+                                        }
+                                        if ep2.createdAt == nil {
+                                            return true
+                                        }
+                                        return ep1.createdAt! > ep2.createdAt!
+                                    })
+                                    
+                                    if eps != nil {
+                                        self?.episodes = eps!
+                                    }
+                                    
+                                    // since there's no ep before saving it, there's no epInfo in the DB for sure.
+                                    let dict = self?.mergeInfo(ep: ep, epInfo: nil) ?? nil
+                                    vc.perform(Selector(("reload:")), with: dict)
+                                }
+                            })
+                        }else{
                             
                             DispatchQueue.main.async {
                                 // since there's no ep before saving it, there's no epInfo in the DB for sure.
-                                let dict = self.mergeInfo(ep: ep, epInfo: nil)
+                                let dict = self?.mergeInfo(ep: ep, epInfo: nil) ?? nil
                                 vc.perform(Selector(("reload:")), with: dict)
                                 return
                             }
@@ -202,11 +203,33 @@ extension AHFMManagerHandler {
                     }
                 }
                 vc.perform(Selector(("reload:")), with: nil)
-                
             })
         }
     }
     
+    
+    fileprivate func fetchEpisodes(byShowId: Int, _ completion: @escaping ()->Void) {
+        self.networking.episodes(byShowID: byShowId) {[weak self] (data, _) in
+            if let data = data, let jsonEpisodes = JSON(data).array {
+                let episodeArr = AHFMEpisodeTransform.transformJsonEpisodes(jsonEpisodes)
+                var eps = [AHFMEpisode]()
+                for ep in episodeArr {
+                    let model = AHFMEpisode(with: ep)
+                    eps.append(model)
+                }
+                if self?.episodes.count == 0 {
+                    self?.episodes.append(contentsOf: eps)
+                }
+                AHFMEpisode.write {
+                    try? AHFMEpisode.insert(models: eps)
+                }
+                
+            }
+            completion()
+        }
+    }
+    
+
     /// AHFMEpisode doesn't have lastPlayedTime property and AHFMEpisodeInfo has it.
     func mergeInfo(ep: AHFMEpisode, epInfo: AHFMEpisodeInfo?) -> [String: Any] {
         var dict = [String: Any]()
