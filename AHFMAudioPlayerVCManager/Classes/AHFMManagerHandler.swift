@@ -85,6 +85,7 @@ extension AHFMManagerHandler {
                 AHFMEpisode.write {
                     guard self != nil else {return}
                     do {
+                        // if insert fails, let it. Since we don't want to override values already in the DB.
                         try AHFMEpisode.insert(models: self!.episodes)
                     }catch _ {
                         
@@ -164,6 +165,8 @@ extension AHFMManagerHandler {
         return eps[index - 1]
     }
     
+    /// If trackId is nil, it means there's an error in the way of fetching it.
+    /// So we need to notify the vc by passing a nil to its selector.
     func getEpisodeAndPerform(_ vc:UIViewController,trackId: Int?){
         guard let trackId = trackId else {
             vc.perform(Selector(("reload:")), with: nil)
@@ -181,13 +184,18 @@ extension AHFMManagerHandler {
                     if let epDict = AHFMEpisodeTransform.jsonToEpisode(epJson) {
                         let ep = AHFMEpisode(with: epDict)
                         AHFMEpisode.write {
-                            if ep.save() {
-                                DispatchQueue.main.async {
-                                    // since there's no ep before saving it, there's no epInfo in the DB for sure.
-                                    let dict = self.mergeInfo(ep: ep, epInfo: nil)
-                                    vc.perform(Selector(("reload:")), with: dict)
-                                    return
-                                }
+                            do {
+                                // use insert, to make sure it wouldn't override values if there's any.
+                                try AHFMEpisode.insert(model: ep)
+                            }catch _ {
+                                
+                            }
+                            
+                            DispatchQueue.main.async {
+                                // since there's no ep before saving it, there's no epInfo in the DB for sure.
+                                let dict = self.mergeInfo(ep: ep, epInfo: nil)
+                                vc.perform(Selector(("reload:")), with: dict)
+                                return
                             }
                         }
                         
@@ -198,6 +206,8 @@ extension AHFMManagerHandler {
             })
         }
     }
+    
+    /// AHFMEpisode doesn't have lastPlayedTime property and AHFMEpisodeInfo has it.
     func mergeInfo(ep: AHFMEpisode, epInfo: AHFMEpisodeInfo?) -> [String: Any] {
         var dict = [String: Any]()
         

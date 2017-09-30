@@ -38,6 +38,9 @@ extension AHDataModel {
         return true
     }
     
+    
+    /// This method will check if there's an model in the DB, if it is , then update. If not, insert.
+    /// So it will override existent values!!
     @discardableResult
     public func save() -> Bool {
         do {
@@ -187,14 +190,29 @@ extension AHDataModel {
         }
         checkDatabaseSetup()
         checkWriteQueue()
-        try db.insert(table: Self.tableName(), bindings: attributes)
+        
+        do {
+            try db.insert(table: Self.tableName(), bindings: attributes)
+        } catch let error {
+            throw error
+        }
+        
     }
     
-    /// If return false, there must be at least 1 error. not a transaction yet!
-    public static func insert(models: [Self]) throws {
+    /// Return unsuccessfully inserted models.
+    /// Return [] if all models get inserted.
+    @discardableResult
+    public static func insert(models: [Self]) -> [Self] {
+        var models = [Self]()
         for model in models {
-            try insert(model: model)
+            do {
+                try insert(model: model)
+            } catch let error {
+                models.append(model)
+                print("insert:\(error)")
+            }
         }
+        return models
     }
 }
 
@@ -216,11 +234,20 @@ extension AHDataModel {
         }
     }
     
-    /// not a transaction yet!
-    public static func update(models: [Self]) throws {
+    /// Return unsuccessfully update models.
+    /// Return [] if all models get updated.
+    @discardableResult
+    public static func update(models: [Self]) -> [Self] {
+        var models = [Self]()
         for model in models {
-            try update(model: model)
+            do {
+                try update(model: model)
+            } catch let error {
+                models.append(model)
+                print("update:\(error)")
+            }
         }
+        return models
     }
     
     /// Update specific properties of this model into the database
