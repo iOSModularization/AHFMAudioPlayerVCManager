@@ -27,7 +27,7 @@ import AHServiceRouter
 //public var lastPlayedTime: TimeInterval?
 
 
-public struct AHFMAudioPlayerManager: AHFMModuleManager {
+public struct AHFMAudioPlayerVCManager: AHFMModuleManager {
     
     public static func register() {
         AHServiceRouter.registerVC(AHFMAudioPlayerVCServices.service, taskName: AHFMAudioPlayerVCServices.taskNavigation) { (userInfo) -> UIViewController? in
