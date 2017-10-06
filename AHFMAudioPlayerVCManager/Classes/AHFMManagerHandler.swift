@@ -12,6 +12,8 @@ import AHFMNetworking
 import AHFMDataCenter
 import SwiftyJSON
 
+import AHServiceRouter
+import AHFMBottomPlayerServices
 
 public class AHFMManagerHandler: NSObject {
     
@@ -20,12 +22,20 @@ public class AHFMManagerHandler: NSObject {
     var initialTrackId: Int?
     
     
-    
-    
     /// episodes for the this show, will be cached.
     lazy var episodes = [AHFMEpisode]()
     
     lazy var networking = AHFMNetworking()
+    
+    
+    func viewWillAppear(_ vc: UIViewController) {
+        let dict: [String: Any] = [AHFMBottomPlayerServices.keyShowPlayer: true, AHFMBottomPlayerServices.keyParentVC: vc]
+        AHServiceRouter.doTask(AHFMBottomPlayerServices.service, taskName: AHFMBottomPlayerServices.taskDisplayPlayer, userInfo: dict, completion: nil)
+    }
+    
+    func viewWillDisappear(_ vc: UIViewController) {
+        
+    }
     
     func audioPlayerVCListBarTapped(_ vc: UIViewController, trackId: Int, albumnId: Int){
         
@@ -221,7 +231,7 @@ extension AHFMManagerHandler {
                     self?.episodes.append(contentsOf: eps)
                 }
                 AHFMEpisode.write {
-                    try? AHFMEpisode.insert(models: eps)
+                    AHFMEpisode.insert(models: eps)
                 }
                 
             }

@@ -1,6 +1,6 @@
 {
   "name": "AHFMAudioPlayerVCManager",
-  "version": "0.2.0",
+  "version": "0.3.2",
   "summary": "A short description of AHFMAudioPlayerVCManager.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/iOSModularization/AHFMAudioPlayerVCManager",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/iOSModularization/AHFMAudioPlayerVCManager.git",
-    "tag": "0.2.0"
+    "tag": "0.3.2"
   },
   "platforms": {
     "ios": "8.0"
@@ -21,6 +21,9 @@
   "source_files": "AHFMAudioPlayerVCManager/Classes/**/*",
   "dependencies": {
     "AHFMAudioPlayerVCServices": [
+
+    ],
+    "AHFMBottomPlayerServices": [
 
     ],
     "AHServiceRouter": [

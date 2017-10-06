@@ -1,7 +1,8 @@
 PODS:
   - AHDataModel (0.3.0)
-  - AHFMAudioPlayerVCManager (0.2.0):
+  - AHFMAudioPlayerVCManager (0.3.2):
     - AHFMAudioPlayerVCServices
+    - AHFMBottomPlayerServices
     - AHFMDataCenter
     - AHFMDataTransformers
     - AHFMModuleManager
@@ -9,6 +10,8 @@ PODS:
     - AHServiceRouter
     - SwiftyJSON
   - AHFMAudioPlayerVCServices (0.1.0):
+    - AHFMServices
+  - AHFMBottomPlayerServices (0.1.0):
     - AHFMServices
   - AHFMDataCenter (0.1.1):
     - AHDataModel
@@ -36,8 +39,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AHDataModel: b266f3a0a302d5aa4428f11dd789a4924ff76f1b
-  AHFMAudioPlayerVCManager: b2262b973aa2b4f5f9c6b03aab997a7e7e68b8a1
+  AHFMAudioPlayerVCManager: 3cd4c0ef53e2d7b8e1a8960de9c3a42d43878aff
   AHFMAudioPlayerVCServices: 27bdded45ce340f6bf0265264e64ee2fd26f6d57
+  AHFMBottomPlayerServices: 62e83815ed8969376d047556382931cc46841de5
   AHFMDataCenter: eee0c634b32328c9a34e8d7212a9fd5a6dd64aad
   AHFMDataTransformers: eafcb87a307fbd52ccd61917fa5de1aff6a7bd53
   AHFMModuleManager: 301c8a5945a301528d5cba55e4809428ef896141
