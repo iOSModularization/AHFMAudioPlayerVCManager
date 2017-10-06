@@ -30,7 +30,7 @@ public class AHFMManagerHandler: NSObject {
     
     
     func viewWillAppear(_ vc: UIViewController) {
-        let dict: [String: Any] = [AHFMBottomPlayerServices.keyShowPlayer: true, AHFMBottomPlayerServices.keyParentVC: vc]
+        let dict: [String: Any] = [AHFMBottomPlayerServices.keyShowPlayer: false, AHFMBottomPlayerServices.keyParentVC: vc]
         AHServiceRouter.doTask(AHFMBottomPlayerServices.service, taskName: AHFMBottomPlayerServices.taskDisplayPlayer, userInfo: dict, completion: nil)
     }
     
