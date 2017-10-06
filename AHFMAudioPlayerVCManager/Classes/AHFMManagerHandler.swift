@@ -14,6 +14,7 @@ import SwiftyJSON
 
 import AHServiceRouter
 import AHFMBottomPlayerServices
+import AHFMEpisodeListVCServices
 
 public class AHFMManagerHandler: NSObject {
     
@@ -38,6 +39,11 @@ public class AHFMManagerHandler: NSObject {
     }
     
     func audioPlayerVCListBarTapped(_ vc: UIViewController, trackId: Int, albumnId: Int){
+        var type: AHServiceNavigationType
+        type = .present(currentVC: vc)
+        
+        
+        AHServiceRouter.navigateVC(AHFMEpisodeListVCServices.service, taskName: AHFMEpisodeListVCServices.taskNavigation, userInfo: [AHFMEpisodeListVCServices.keyShowId : albumnId], type: type, completion: nil)
         
     }
     func audioPlayerVCAlbumnCoverTapped(_ vc: UIViewController, atIndex index:Int, trackId: Int, albumnId: Int){
