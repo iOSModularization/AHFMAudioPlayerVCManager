@@ -268,6 +268,7 @@ extension AHFMManagerHandler {
         
         if let epInfo = epInfo {
             dict["lastPlayedTime"] = epInfo.lastPlayedTime
+            dict["localFilePath"] = epInfo.localFilePath
         }
         return dict
     }
