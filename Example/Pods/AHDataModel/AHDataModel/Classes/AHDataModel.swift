@@ -38,9 +38,6 @@ extension AHDataModel {
         return true
     }
     
-    
-    /// This method will check if there's an model in the DB, if it is , then update. If not, insert.
-    /// So it will override existent values!!
     @discardableResult
     public func save() -> Bool {
         do {
@@ -109,7 +106,7 @@ extension AHDataModel {
         }
         checkDatabaseSetup()
         let tableName = Self.tableName()
-        let sql = "SELECT * FROM \(tableName)"
+        let sql = "SELECT * FROM \(tableName) "
         let query = AHDataModelQuery<Self>(rawSQL: sql, db: db)
         query.attributes = []
         return query
@@ -190,29 +187,21 @@ extension AHDataModel {
         }
         checkDatabaseSetup()
         checkWriteQueue()
-        
-        do {
-            try db.insert(table: Self.tableName(), bindings: attributes)
-        } catch let error {
-            throw error
-        }
-        
+        try db.insert(table: Self.tableName(), bindings: attributes)
     }
     
-    /// Return unsuccessfully inserted models.
-    /// Return [] if all models get inserted.
+    /// Return those unsuccessfully inserted ones.
     @discardableResult
     public static func insert(models: [Self]) -> [Self] {
-        var models = [Self]()
+        var unsuccessful = [Self]()
         for model in models {
             do {
                 try insert(model: model)
-            } catch let error {
-                models.append(model)
-                print("insert:\(error)")
+            } catch {
+                unsuccessful.append(model)
             }
         }
-        return models
+        return unsuccessful
     }
 }
 
@@ -234,20 +223,18 @@ extension AHDataModel {
         }
     }
     
-    /// Return unsuccessfully update models.
-    /// Return [] if all models get updated.
+    /// Return those unsuccessfully updated ones.
     @discardableResult
     public static func update(models: [Self]) -> [Self] {
-        var models = [Self]()
+        var unsuccessful = [Self]()
         for model in models {
             do {
                 try update(model: model)
-            } catch let error {
-                models.append(model)
-                print("update:\(error)")
+            } catch  {
+                unsuccessful.append(model)
             }
         }
-        return models
+        return unsuccessful
     }
     
     /// Update specific properties of this model into the database
@@ -574,6 +561,10 @@ internal struct AHDBHelper {
             type = .integer
         }else if value is String {
             type = .text
+        }else if value is Bool {
+            type = .integer
+        }else {
+            fatalError("Unsupported value:\(String(describing: value)) with type:\(type(of: value))")
         }
         return type
     }
@@ -587,7 +578,11 @@ internal struct AHDBHelper {
             if Operator.lowercased().contains("in") {
                 for (i,value) in valueArr.enumerated() {
                     if i == 0 {
-                        sql += "(?,"
+                        if valueArr.count == 1 {
+                            sql += "(?)"
+                        }else{
+                            sql += "(?,"
+                        }
                     }else if i == valueArr.count - 1 {
                         sql += "?)"
                     }else{

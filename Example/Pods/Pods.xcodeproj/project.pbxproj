@@ -31,7 +31,6 @@
 		32FB414D09D94C424B2706E1E1A18FF9 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F27DEBA6C1EBB05920BC60D159AB11 /* Timeline.swift */; };
 		3490E24C00F2FADB6B96175AB6719EBA /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3ABB4C4D07BBD8970ECC37D8D94E96 /* DispatchQueue+Alamofire.swift */; };
 		3C0731253A8019B6E989C22BB578FC8F /* AHFMServices-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BABF8CF64F1F564640B3C8CBC6823769 /* AHFMServices-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		40B89A526C4B4537EFBA235675D36436 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 925AA80D5D136D05C397F95AABE8F40E /* Alamofire.framework */; };
 		417601FE21C231D6CE55DB7B795395E4 /* AHFMEpisodeListVCServices-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 705886DBDCA9916556A2B364AD0CCC91 /* AHFMEpisodeListVCServices-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42D23232241A7A96B0BA67487C635DF5 /* UIDeviceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86583B4CB85C7621159EDBB3DF6A640 /* UIDeviceExtension.framework */; };
 		448455EF43501F485E680475BE34A262 /* AHFMModuleManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5071A1ECA1FDE8FEF7401358DE6BD3 /* AHFMModuleManager-dummy.m */; };
@@ -43,7 +42,6 @@
 		4DE3148C555A382312051055F7C307F9 /* AHFMEpisodeListVCServices-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 957C5E96A0D880F484E99D2026834CF5 /* AHFMEpisodeListVCServices-dummy.m */; };
 		55A896B612754969C1415908744A76E4 /* UIDeviceExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4552693A6E47DFEB6E44F0D6684805 /* UIDeviceExtension-dummy.m */; };
 		566514C1327CFF263FB6A0E539BDDC68 /* AHFMShowPageServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CA291FE09A500EDD9F36A20161076F /* AHFMShowPageServices.framework */; };
-		5783D0EFE045A2605E92AF6DC14CC49A /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89A60CE6AD9837ADC1E14749DED956E /* SwiftyJSON.framework */; };
 		57B46717364667A05ABC7FF13AF658D8 /* AHFMDataCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D16923F3DBDDB9E2651C9BA505E5A7FA /* AHFMDataCenter.framework */; };
 		588077E8BCDEB8CD89B9D8B67ECB5DDD /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43B8D9F310471DBC12BE911F477DFE1 /* ServerTrustPolicy.swift */; };
 		5A597684DBF6849328C579C99D57C806 /* AHFMShowTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725809A01B254DFC8D0E663EDC07A5DC /* AHFMShowTransform.swift */; };
@@ -51,7 +49,6 @@
 		6088383430ED46160B3ED5E84795616B /* AHFMServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6E18F7E804F512944BB591849D57F /* AHFMServices.swift */; };
 		6169978361613EF07BF70ED528772A76 /* AHServiceRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BD5929AD1544163650684C0BF244F28 /* AHServiceRouter.framework */; };
 		616D7CCED0C2A9A61767027CFC3E4C30 /* UIDeviceExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ACBA6CFF3DFBAF5FA85E43D470766FA /* UIDeviceExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62C6BEE53898637917B7370EDDE09813 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B35BFAC0880227349F861776D802F355 /* KeychainAccess.framework */; };
 		62EB447CD35174F326FB00E3A90732F5 /* AHDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = A090C1C17C1D6DE36D721686C582CF9D /* AHDB.swift */; };
 		6358577C3272F699B8CF8FC71FC93625 /* AHFMAudioPlayerVCServices-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18342E6CD439D4374D4F5B800EE10DD1 /* AHFMAudioPlayerVCServices-dummy.m */; };
 		65B2A6C81DB20DB618D581C9BF29007C /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ECBF7716D05B78CB20000D24384D63 /* Keychain.swift */; };
@@ -75,6 +72,7 @@
 		8A1DC4C91AD287A70426A22455B4EF48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C0D8B7FC00B07827346A4611420BBB /* Foundation.framework */; };
 		8B387AE80B7CE5528B5EA8530B7E9173 /* AHDataModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7E7287831F4134CD2667D9217713B1 /* AHDataModel-dummy.m */; };
 		8FD8E9553A85947925B86CF3D0D92DA5 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716B1F119499D5C29D493D752AF85146 /* AFError.swift */; };
+		8FFC811B6A129B13D699BAE0BCF6BEB9 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 925AA80D5D136D05C397F95AABE8F40E /* Alamofire.framework */; };
 		903EFCA68B1500F2472DD967E8683E62 /* AHDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245936B7F11211BE0B165992121B6056 /* AHDataModel.swift */; };
 		91B40E538CCD92FA1E396C8329593D0F /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC3704262176C1B33A5FE80A3DA6280 /* MultipartFormData.swift */; };
 		930E2534446E21252C682622FA6311AF /* AHFMServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7288B38577A17A8476D0408043CB7210 /* AHFMServices.framework */; };
@@ -83,7 +81,6 @@
 		999DD5D72F7E14EB053FB72905AF072C /* AHFMNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 89D7C31518EF7670BD39E140BFE50F3E /* AHFMNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9A3ACF52102C68DAA294388331755579 /* AHDataModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288BC429E1FDBB55CDE137A41ED54C2D /* AHDataModel.framework */; };
 		9B7EAA2B1AC6C319FF869D532EA362A6 /* AHFMDataTransformers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5E7D2F040111A450120DC135B2318F /* AHFMDataTransformers.framework */; };
-		9C6CF5EE66EA0BD5D343F114F835ECC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C0D8B7FC00B07827346A4611420BBB /* Foundation.framework */; };
 		9E8697184655CC05BD6C100E98D396F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C0D8B7FC00B07827346A4611420BBB /* Foundation.framework */; };
 		9ECFF95A4ED105565713328D23E31437 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89A60CE6AD9837ADC1E14749DED956E /* SwiftyJSON.framework */; };
 		9F5076E8967244E95699E77DFEEC3D8C /* AHServiceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F11C3D5943EB7E8BEB81A9E396C387 /* AHServiceRouter.swift */; };
@@ -92,8 +89,10 @@
 		A7C5480E992700F2B1D2333839171737 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F6D6E45892821703CEA5558BA3B28C /* Notifications.swift */; };
 		A8BBA7C0BD8F90B397EC7F2DA94906BE /* AHFMDataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD84FE65B1B03D952DED2F838F5B9CD /* AHFMDataCenter.swift */; };
 		AD626546DEAB0AF2B4D186AB3D56BF00 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68E98C108F60776654E048A4ED278BF /* SessionDelegate.swift */; };
+		AE60BECD59F18EAF40C880872BE91348 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C0D8B7FC00B07827346A4611420BBB /* Foundation.framework */; };
 		B10B897B6BFB4928E70053FD8463FE82 /* AHFMAudioPlayerVCServices-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E4BB26C0D94C8E6997880FDA4536BF93 /* AHFMAudioPlayerVCServices-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B24F2C009E377382EA7D673F8E21AD23 /* Pods-AHFMAudioPlayerVCManager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D1555D0A818F1C21CF9DD603E3537BA6 /* Pods-AHFMAudioPlayerVCManager_Tests-dummy.m */; };
+		B397BA69B7520472DF849B097E3E08C3 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B35BFAC0880227349F861776D802F355 /* KeychainAccess.framework */; };
 		B5342B7D6D8B40E19F47C5E9AA209779 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C3585C4CA2094105A0C80CC8812D21ED /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5689E8A76A78C42AB593A4A6748FFE4 /* AHFMSubscribedShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533EA37C203B6AA6BAAFB9D05872DB45 /* AHFMSubscribedShow.swift */; };
 		B7A2FAE1ECBF59835E60F8F677BE5AD7 /* AHFMServices-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACD739C8655EDCE5B2A1830D2D46750 /* AHFMServices-dummy.m */; };
@@ -384,13 +383,6 @@
 			remoteGlobalIDString = 771D1266E734917052B0F81BECCD5E4C;
 			remoteInfo = AHFMAudioPlayerVCServices;
 		};
-		E2DFB539CA67843580DF150A1EA0CAC7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BC169AF9E958D0640904DB8C442FA727;
-			remoteInfo = SwiftyJSON;
-		};
 		EB40E207A3DEF4326F7EC60F50E73EE9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -666,23 +658,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		33D2772112D2A4A3A9D2ACE5A1BD5446 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				40B89A526C4B4537EFBA235675D36436 /* Alamofire.framework in Frameworks */,
-				9C6CF5EE66EA0BD5D343F114F835ECC3 /* Foundation.framework in Frameworks */,
-				62C6BEE53898637917B7370EDDE09813 /* KeychainAccess.framework in Frameworks */,
-				5783D0EFE045A2605E92AF6DC14CC49A /* SwiftyJSON.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3ECF814E63905D66C9BC14F8D869E274 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				231EBBE083ACAA212E654A1439D05B4A /* AHFMServices.framework in Frameworks */,
 				BB65FEAF7154A13D2CA7DF0BA548D0E2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40CF1BEF97204143C30C44BFAEF56D0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FFC811B6A129B13D699BAE0BCF6BEB9 /* Alamofire.framework in Frameworks */,
+				AE60BECD59F18EAF40C880872BE91348 /* Foundation.framework in Frameworks */,
+				B397BA69B7520472DF849B097E3E08C3 /* KeychainAccess.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1696,7 +1687,7 @@
 			buildConfigurationList = 75EDD05BD53FCCA0C30B558F61406CC4 /* Build configuration list for PBXNativeTarget "AHFMNetworking" */;
 			buildPhases = (
 				B1386CEC35BC61CBB000E2F305C5A9A4 /* Sources */,
-				33D2772112D2A4A3A9D2ACE5A1BD5446 /* Frameworks */,
+				40CF1BEF97204143C30C44BFAEF56D0E /* Frameworks */,
 				C903ADD7FC95F31EB7ECF9C44BF5376F /* Headers */,
 			);
 			buildRules = (
@@ -1704,7 +1695,6 @@
 			dependencies = (
 				D51E6D1A997F93C31A172AB0E85014B5 /* PBXTargetDependency */,
 				47983B9BE14A598A7744F0E5C60BD707 /* PBXTargetDependency */,
-				DF2FA5D89AF85E96F298E416637E8B11 /* PBXTargetDependency */,
 			);
 			name = AHFMNetworking;
 			productName = AHFMNetworking;
@@ -2331,12 +2321,6 @@
 			name = Alamofire;
 			target = BAE2136FDFBDAD98F433B717F94A1E3E /* Alamofire */;
 			targetProxy = 8F32471BA77BA77AC5C59A12B8D8021C /* PBXContainerItemProxy */;
-		};
-		DF2FA5D89AF85E96F298E416637E8B11 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftyJSON;
-			target = BC169AF9E958D0640904DB8C442FA727 /* SwiftyJSON */;
-			targetProxy = E2DFB539CA67843580DF150A1EA0CAC7 /* PBXContainerItemProxy */;
 		};
 		E82FF7A3EAD813B6A68B15D399DBDEE5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

@@ -20,8 +20,6 @@ import AHFMShowPageServices
 
 public class AHFMManagerHandler: NSObject {
     
-    public static let keyTrackId = "keyTrackId"
-    
     var initialTrackId: Int?
     
     

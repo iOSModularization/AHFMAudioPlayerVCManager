@@ -1,6 +1,6 @@
 {
   "name": "AHFMAudioPlayerVCManager",
-  "version": "0.3.5",
+  "version": "0.3.7",
   "summary": "A short description of AHFMAudioPlayerVCManager.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/iOSModularization/AHFMAudioPlayerVCManager",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/iOSModularization/AHFMAudioPlayerVCManager.git",
-    "tag": "0.3.5"
+    "tag": "0.3.7"
   },
   "platforms": {
     "ios": "8.0"

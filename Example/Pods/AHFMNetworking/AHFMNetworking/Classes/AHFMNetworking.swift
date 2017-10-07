@@ -72,6 +72,19 @@ public class AHFMNetworking: NSObject {
         request?.cancel()
     }
     
+    public func cancelRequest(url: URL) {
+        let requests = self.requests.filter { (request) -> Bool in
+            return request.request?.url == url
+        }
+        requests.forEach { (request) in
+            request.cancel()
+            if let index = self.requests.index(of: request) {
+                self.requests.remove(at: index)
+            }
+        }
+        
+    }
+    
     @discardableResult
     public func trending(_ completion: @escaping (_ data: Any?, _ error: Error?)->Void)  -> DataRequest{
         let baseURLString = Constants.BaseURL.trending
@@ -142,10 +155,15 @@ public class AHFMNetworking: NSObject {
     
     @discardableResult
     fileprivate func request(urlStr: String, _ completion: @escaping (_ data: Any?, _ error: Error?)->Void) -> DataRequest {
-        let index = requests.count
+        
         let request = sessionManager.request(urlStr).validate().responseJSON { response in
             
-            self.requests.remove(at: index)
+            DispatchQueue.main.async {
+                if let url = response.request?.url {
+                    self.cancelRequest(url: url)
+                }
+                
+            }
             
             switch response.result {
             case .success(let value):

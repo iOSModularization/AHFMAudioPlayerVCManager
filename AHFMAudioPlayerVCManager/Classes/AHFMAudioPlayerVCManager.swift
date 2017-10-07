@@ -31,21 +31,31 @@ public struct AHFMAudioPlayerVCManager: AHFMModuleManager {
     
     public static func activate() {
         AHServiceRouter.registerVC(AHFMAudioPlayerVCServices.service, taskName: AHFMAudioPlayerVCServices.taskNavigation) { (userInfo) -> UIViewController? in
-            guard let trackId = userInfo[AHFMAudioPlayerVCServices.keyTrackId] as? Int else {
+            guard let thisTrackId = userInfo[AHFMAudioPlayerVCServices.keyTrackId] as? Int else {
                 return nil
             }
             
-            let objStr = "AHFMAudioPlayerVC.AHFMAudioPlayerVC"
+            let vcStr = "AHFMAudioPlayerVC.AHFMAudioPlayerVC"
             
-            guard let objType = NSClassFromString(objStr) as? UIViewController.Type else {
+            guard let clazz = NSClassFromString(vcStr), let vcType = clazz as? UIViewController.Type else {
                 return nil
             }
             
+            var vc: UIViewController? = AHServiceRouter.reuseVC({ (vc) -> Bool in
+                if vc.isKind(of: clazz) {
+                    return true
+                }else{
+                    return false
+                }
+            })
             
-            let vc = objType.init()
+            if vc == nil {
+                vc = vcType.init()
+            }
+            
             let manager = AHFMManagerHandler()
-            manager.initialTrackId = trackId
-            vc.setValue(manager, forKey: "manager")
+            manager.initialTrackId = thisTrackId
+            vc?.setValue(manager, forKey: "manager")
             
             return vc
         }
