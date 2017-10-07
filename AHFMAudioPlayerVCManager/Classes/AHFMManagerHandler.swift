@@ -15,6 +15,8 @@ import SwiftyJSON
 import AHServiceRouter
 import AHFMBottomPlayerServices
 import AHFMEpisodeListVCServices
+import AHFMShowPageServices
+
 
 public class AHFMManagerHandler: NSObject {
     
@@ -47,7 +49,12 @@ public class AHFMManagerHandler: NSObject {
         
     }
     func audioPlayerVCAlbumnCoverTapped(_ vc: UIViewController, atIndex index:Int, trackId: Int, albumnId: Int){
-        
+        guard let navVC = vc.navigationController else {
+            return
+        }
+        let type: AHServiceNavigationType = .push(navVC:navVC)
+        let info: [String : Any] = [AHFMShowPageServices.keyShowId: albumnId]
+        AHServiceRouter.navigateVC(AHFMShowPageServices.service, taskName: AHFMShowPageServices.taskNavigation, userInfo: info, type: type, completion: nil)
     }
     
     /// When the data is ready, call reload()

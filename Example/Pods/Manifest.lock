@@ -1,6 +1,6 @@
 PODS:
   - AHDataModel (0.3.0)
-  - AHFMAudioPlayerVCManager (0.3.3):
+  - AHFMAudioPlayerVCManager (0.3.5):
     - AHFMAudioPlayerVCServices
     - AHFMBottomPlayerServices
     - AHFMDataCenter
@@ -8,6 +8,7 @@ PODS:
     - AHFMEpisodeListVCServices
     - AHFMModuleManager
     - AHFMNetworking
+    - AHFMShowPageServices
     - AHServiceRouter
     - SwiftyJSON
   - AHFMAudioPlayerVCServices (0.1.0):
@@ -27,6 +28,8 @@ PODS:
     - KeychainAccess (~> 3.0.2)
     - SwiftyJSON
   - AHFMServices (0.3.0)
+  - AHFMShowPageServices (0.1.2):
+    - AHFMServices
   - AHServiceRouter (0.3.0)
   - Alamofire (4.5.1)
   - KeychainAccess (3.0.2)
@@ -42,7 +45,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AHDataModel: b266f3a0a302d5aa4428f11dd789a4924ff76f1b
-  AHFMAudioPlayerVCManager: c3788f242061859f1bd2b789201bf542f750e6bc
+  AHFMAudioPlayerVCManager: 82d1fe63b3e58e52cd564ac81e3187a14d13c971
   AHFMAudioPlayerVCServices: 27bdded45ce340f6bf0265264e64ee2fd26f6d57
   AHFMBottomPlayerServices: 62e83815ed8969376d047556382931cc46841de5
   AHFMDataCenter: eee0c634b32328c9a34e8d7212a9fd5a6dd64aad
@@ -51,6 +54,7 @@ SPEC CHECKSUMS:
   AHFMModuleManager: 301c8a5945a301528d5cba55e4809428ef896141
   AHFMNetworking: b2e70aaf377edc0201300e885577563b4cf7fc28
   AHFMServices: 7c2c52fd7bd0b604fdab05cc9adb13129c218b60
+  AHFMShowPageServices: f5bc995a70d155194528652563ebaf3b94f96fb3
   AHServiceRouter: 665bd7a43fc58632477dfea53d6850043224cbd9
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   KeychainAccess: a986406022dfc7c634c691ad3bec670cc6a32002

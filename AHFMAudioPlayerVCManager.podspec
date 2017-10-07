@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AHFMAudioPlayerVCManager'
-  s.version          = '0.3.5'
+  s.version          = '0.3.6'
   s.summary          = 'A short description of AHFMAudioPlayerVCManager.'
 
 # This description is used to generate tags and improve search results.
@@ -42,6 +42,7 @@ TODO: Add long description of the pod here.
 s.dependency 'AHFMAudioPlayerVCServices'
 s.dependency 'AHFMBottomPlayerServices'
 s.dependency 'AHFMEpisodeListVCServices'
+s.dependency 'AHFMShowPageServices'
 s.dependency 'AHServiceRouter'
 s.dependency 'AHFMModuleManager'
 s.dependency 'AHFMNetworking'
